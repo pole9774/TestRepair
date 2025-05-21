@@ -171,6 +171,108 @@ public class AppiumTest {
         }
     }
 
+    @Test
+    public void interestsWithTopics_whenTopicsFollowed_showFollowedAndUnfollowedTopicsWithInfo() {
+        try {
+            // Go to the 'Interests' tab (bottom bar, v2)
+            WebElement interestsTab = driver.findElement(AppiumBy.xpath(
+                "//android.widget.TextView[@text='Interests']/ancestor::android.view.View[@clickable='true']"
+            ));
+            interestsTab.click();
+
+            // Follow the second topic ("Android Auto")
+            WebElement secondTopicRow = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='interests:topics']/android.view.View[2]"
+            ));
+            WebElement followButton = secondTopicRow.findElement(AppiumBy.xpath(
+                ".//android.view.View[@content-desc='Follow interest']"
+            ));
+            followButton.click();
+
+            // Verify the first 3 topics are displayed
+            WebElement firstTopic = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='interests:topics']/android.view.View[1]//android.widget.TextView[@text='Accessibility']"
+            ));
+            Assert.assertTrue(firstTopic.isDisplayed(), "First topic is not displayed!");
+
+            WebElement secondTopic = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='interests:topics']/android.view.View[2]//android.widget.TextView[@text='Android Auto']"
+            ));
+            Assert.assertTrue(secondTopic.isDisplayed(), "Second topic is not displayed!");
+
+            WebElement thirdTopic = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='interests:topics']/android.view.View[3]//android.widget.TextView[@text='Android Studio & Tools']"
+            ));
+            Assert.assertTrue(thirdTopic.isDisplayed(), "Third topic is not displayed!");
+
+            // Unfollow the second topic ("Android Auto")
+            WebElement unfollowButton = secondTopicRow.findElement(AppiumBy.xpath(
+                ".//android.view.View[@content-desc='Unfollow interest']"
+            ));
+            unfollowButton.click();
+
+            // Go to the 'For you' tab (bottom bar, v2)
+            WebElement forYouTab = driver.findElement(AppiumBy.xpath(
+                "//android.widget.TextView[@text='For you']/ancestor::android.view.View[@clickable='true']"
+            ));
+            forYouTab.click();
+        } catch (NoSuchElementException e) {
+            Assert.fail("Element not found: " + e.getMessage());
+        } catch (Exception e) {
+            Assert.fail("Unexpected error: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void news_whenSuccessAndTopicIsSuccess_isShown() {
+        int maxSwipes = 10;
+        int swipes = 0;
+
+        try {
+            // Go to 'Interests' tab (bottom bar, v2)
+            WebElement interestsTab = driver.findElement(AppiumBy.xpath(
+                "//android.widget.TextView[@text='Interests']/ancestor::android.view.View[@clickable='true']"
+            ));
+            interestsTab.click();
+
+            // Click topic 'Accessibility' (find the row by text, then click the parent row)
+            WebElement topicRow = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='interests:topics']//android.widget.TextView[@text='Accessibility']/parent::android.view.View"
+            ));
+            topicRow.click();
+
+            // Swipe vertically until the first news title is found (topic_v2.xml)
+            String containerXPath = "//android.view.View[@resource-id='topic:14']";
+            while (driver.findElements(AppiumBy.xpath(
+                "//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices \uD83D\uDCAC\"]"
+            )).isEmpty() && swipes < maxSwipes) {
+                swipeUp(containerXPath);
+                swipes++;
+            }
+
+            WebElement newsTitle = driver.findElement(AppiumBy.xpath(
+                "//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices \uD83D\uDCAC\"]"
+            ));
+            Assert.assertTrue(newsTitle.isDisplayed(), "Title is not displayed!");
+
+            // Click the back button (descendant of topic:14, content-desc='Back')
+            WebElement backButton = driver.findElement(AppiumBy.xpath(
+                "//android.view.View[@resource-id='topic:14']//android.view.View[@content-desc='Back']"
+            ));
+            backButton.click();
+
+            // Go to 'For you' tab (bottom bar, v2)
+            WebElement forYouTab = driver.findElement(AppiumBy.xpath(
+                "//android.widget.TextView[@text='For you']/ancestor::android.view.View[@clickable='true']"
+            ));
+            forYouTab.click();
+        } catch (NoSuchElementException e) {
+            Assert.fail("Element not found: " + e.getMessage());
+        } catch (Exception e) {
+            Assert.fail("Unexpected error: " + e.getMessage());
+        }
+    }
+
     @AfterClass
     public void teardown() {
         if (driver != null) {

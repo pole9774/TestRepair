@@ -143,6 +143,84 @@ public class AppiumTest {
         }
     }
 
+    @Test
+    public void interestsWithTopics_whenTopicsFollowed_showFollowedAndUnfollowedTopicsWithInfo() {
+        try {
+            // Go to the 'Interests' tab
+            WebElement interests = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Interests\"]"));
+            interests.click();
+
+            // Follow the second topic
+            WebElement follow_button = driver.findElement(AppiumBy.xpath("(//android.view.View[@content-desc=\"Follow interest button\"])[2]"));
+            follow_button.click();
+
+            // Verify the first 3 topics are displayed
+            WebElement first_topic = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Accessibility\"]"));
+            Assert.assertTrue(first_topic.isDisplayed(), "First topic is not displayed!");
+
+            WebElement second_topic = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Android Auto\"]"));
+            Assert.assertTrue(second_topic.isDisplayed(), "Second topic is not displayed!");
+
+            WebElement third_topic = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Android Studio & Tools\"]"));
+            Assert.assertTrue(third_topic.isDisplayed(), "Third topic is not displayed!");
+
+            // Unfollow the second topic
+            WebElement unfollow_button = driver.findElement(AppiumBy.xpath("//android.view.View[@content-desc=\"Unfollow interest button\"]"));
+            unfollow_button.click();
+
+            // Go to the 'For you' tab
+            WebElement for_you = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"For you\"]"));
+            for_you.click();
+        } catch (NoSuchElementException e) {
+            Assert.fail("Element not found: " + e.getMessage());
+        } catch (Exception e) {
+            Assert.fail("Unexpected error: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void news_whenSuccessAndTopicIsSuccess_isShown() {
+        int maxSwipes = 10;
+        int swipes = 0;
+
+        try {
+            // Go to 'Interests' tab
+            WebElement interests_tab = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Interests\"]"));
+            interests_tab.click();
+
+            // Click topic 'Accessibility'
+            WebElement topic = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Accessibility\"]"));
+            topic.click();
+
+            // Swipe vertically until the first news title is found
+            String containerXPath = "//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]";
+            while (driver.findElements(AppiumBy.xpath("//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices \uD83D\uDCAC\"]")).isEmpty() && swipes < maxSwipes) {
+                swipeUp(containerXPath);
+                swipes++;
+            }
+
+            WebElement news_title = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices \uD83D\uDCAC\"]"));
+            Assert.assertTrue(news_title.isDisplayed(), "Title is not displayed!");
+
+            // Swipe to the back button and click it
+            swipes = 0;
+            while (driver.findElements(AppiumBy.xpath("//android.view.View[@content-desc=\"Back\"]")).isEmpty() && swipes < maxSwipes) {
+                swipeDown(containerXPath);
+                swipes++;
+            }
+            WebElement back_button = driver.findElement(AppiumBy.xpath("//android.view.View[@content-desc=\"Back\"]"));
+            back_button.click();
+
+            // Go to 'For you' tab
+            WebElement for_you_tab = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"For you\"]"));
+            for_you_tab.click();
+        } catch (NoSuchElementException e) {
+            Assert.fail("Element not found: " + e.getMessage());
+        } catch (Exception e) {
+            Assert.fail("Unexpected error: " + e.getMessage());
+        }
+    }
+
     @AfterClass
     public void teardown() {
         if (driver != null) {
