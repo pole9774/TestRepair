@@ -17,7 +17,7 @@ for key, value in desired_caps.items():
 
 driver = webdriver.Remote("http://localhost:4723", options=options)
 
-time.sleep(5)
+time.sleep(10)
 
 try:
     driver.find_element("accessibility id", "More options").click()
@@ -29,8 +29,11 @@ try:
     driver.find_element("id", 'com.simplemobiletools.applauncher:id/settings_customize_colors_label').click()
     time.sleep(3)
 
-    driver.find_element("id", 'com.simplemobiletools.applauncher:id/customization_text_color_label').click()
+    driver.find_element("-android uiautomator", 'new UiSelector().text("Light theme")').click()
+    time.sleep(3)
+
+    driver.find_element("-android uiautomator", 'new UiSelector().text("Dark theme")').click()
     
 finally:
-    time.sleep(5)
+    time.sleep(10)
     driver.quit()
