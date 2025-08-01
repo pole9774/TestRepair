@@ -24,23 +24,23 @@ driver.implicitly_wait(20)
 
 time.sleep(2)
 
-el = driver.find_element("id", "com.ichi2.anki:id/fab_expand_menu_button")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/fab_expand_menu_button")
 el.click()
 time.sleep(1)
 
-el = driver.find_element("id", "com.ichi2.anki:id/add_deck_action")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/add_deck_action")
 el.click()
 time.sleep(1)
 
-el = driver.find_element("id", "com.ichi2.anki:id/buttonDefaultNegative")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/buttonDefaultNegative")
 el.click()
 time.sleep(1)
 
-el = driver.find_element("id", "com.ichi2.anki:id/fab_expand_menu_button")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/fab_expand_menu_button")
 el.click()
 time.sleep(1)
 
-el = driver.find_element("id", "com.ichi2.anki:id/add_deck_action")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/add_deck_action")
 el.click()
 time.sleep(1)
 
@@ -50,8 +50,49 @@ el.clear()
 el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.EditText")[0]
 el.send_keys("Test")
 
-el = driver.find_element("id", "com.ichi2.anki:id/buttonDefaultPositive")
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/buttonDefaultPositive")
 el.click()
 time.sleep(1)
 
 time.sleep(2)
+
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/fab_expand_menu_button")
+el.click()
+time.sleep(1)
+
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/add_note_action")
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/text1")[1]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/text1")[1]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "com.ichi2.anki:id/id_note_editText")[0]
+el.clear()
+
+el = driver.find_elements(AppiumBy.ID, "com.ichi2.anki:id/id_note_editText")[0]
+el.clear()
+
+el = driver.find_elements(AppiumBy.ID, "com.ichi2.anki:id/id_note_editText")[0]
+el.send_keys("TestFront")
+
+el = driver.find_elements(AppiumBy.ID, "com.ichi2.anki:id/id_note_editText")[1]
+el.clear()
+
+el = driver.find_elements(AppiumBy.ID, "com.ichi2.anki:id/id_note_editText")[1]
+el.send_keys("TestBack")
+
+el = driver.find_element(AppiumBy.ID, "com.ichi2.anki:id/action_save")
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageButton")[0]
+el.click()
+time.sleep(1)
+
+driver.quit()
