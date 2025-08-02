@@ -6,8 +6,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 desired_caps = {
     "platformName": "Android",
     "deviceName": "emulator-5554",
-    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AntennaPod\\AntennaPod v2.1.3.apk",
-    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AntennaPod\\AntennaPod v2.5.0.apk",
+    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AntennaPod\\AntennaPod v2.1.3.apk",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AntennaPod\\AntennaPod v2.5.0.apk",
     "appWaitActivity": "de.danoeh.antennapod.*",
     "noReset": True,
     "automationName": "UiAutomator2"
