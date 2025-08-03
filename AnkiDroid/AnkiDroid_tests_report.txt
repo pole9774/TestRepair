@@ -1,0 +1,38 @@
+Test scritti per AnkiDroid v2.6
+Si vogliono vedere risultati su AnkiDroid v2.13.0
+
+test-1:
+	v2.6: PASSA
+	v2.13.0: NON PASSA (si blocca la prima volta perché il resource-id del bottone CANCEL è diverso il questa versione)
+	
+test-2:
+	v2.6: PASSA
+	v2.13.0: PASSA
+	
+test-3:
+	v2.6: PASSA
+	v2.13.0: NON PASSA ("cloze deletions" necessario per creare cloze note)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AnkiDroid\\AnkiDroid v2.6.apk",
+  "appWaitActivity": "com.ichi2.anki.DeckPicker",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\AnkiDroid\\AnkiDroid v2.13.0.apk",
+  "appWaitActivity": "com.ichi2.anki.DeckPicker",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}

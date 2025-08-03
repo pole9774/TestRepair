@@ -1,0 +1,33 @@
+Test scritti per AppLaunch v2.0.0
+Si vogliono vedere risultati su AppLaunch v3.1.1
+
+test-1:
+	v2.0.0: PASSA
+	v3.1.1: PASSA
+
+test-2:
+	v2.0.0: PASSA
+	v3.1.1: PASSA
+	
+test-3:
+	v2.0.0: PASSA
+	v3.1.1: NON PASSA ('Light' e 'Dark' al posto di 'Light theme' e 'Dark theme')
+	repaired: YES
+
+test-4:
+	v2.0.0: PASSA
+	v3.1.1: NON PASSA ('Dark' al posto di 'Dark theme')
+	repaired: YES
+
+----------------------------------------------------------------------------------------------------------------
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "appium:deviceName": "emulator-5554",
+  "appium:appPackage": "com.simplemobiletools.applauncher",
+  "appium:appActivity": "com.simplemobiletools.applauncher.activities.MainActivity",
+  "appium:noReset": true,
+  "appium:automationName": "UiAutomator2"
+}

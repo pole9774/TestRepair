@@ -1,0 +1,146 @@
+Test scritti per v1 (main branch), si vogliono vedere i risultati su v2 (V2 branch)
+
+https://github.com/pole9774/ThesisApp
+
+
+1. welcomeMessage_displaysUserFirstName
+
+	v1: PASSA
+
+	v2: NON PASSA
+	il messaggio visualizzato è diverso
+	
+	v2 repaired: PASSA
+	
+
+2. teamSection_displaysTeams
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+3. taskSection_displaysTasks
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+4. taskStatusChips_areCorrectlyDisplayed
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+5. teamCard_clickTriggersNavigation
+
+	v1: PASSA
+	
+	v2: PASSA
+	
+
+6. taskCard_clickTriggersNavigation_homePage
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+7. taskCard_clickTriggersNavigation_teamPage
+
+	v1: PASSA
+	
+	v2: PASSA
+	
+	
+8. sortButton_callsToggleSortMode
+
+	v1: PASSA
+	
+	v2: NON PASSA
+	content-desc sort button diversa,
+	ordinamento non più alfabetico ma per numero di assigned members
+	
+	v2 repaired: NON PASSA, repair parziale
+	content-desc sort button riparata,
+	ordinamento diverso non riparato, non ha accesso a tutti i task
+
+
+9. fabButton_navigatesToCreateTeam
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+10. homeScreen_hasCorrectVerticalLayoutStructure
+
+	v1: PASSA
+	
+	v2: NON PASSA
+	nomi degli headers diversi
+	
+	v2 repaired: PASSA
+
+
+11. taskCard_showsCorrectAssignedMembersCount
+
+	v1: PASSA
+	
+	v2: NON PASSA
+	content-desc sort button diversa,
+	ordinamento non più alfabetico ma per numero di assigned members
+	
+	v2 repaired: NON PASSA, repair parziale (vedi 8.)
+	
+
+12. teamCard_showsCorrectMemberCount
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+13. sectionHeaders_areDisplayedCorrectly
+
+	v1: PASSA
+	
+	v2: NON PASSA
+	nomi degli headers diversi
+	
+	v2 repaired: PASSA
+
+
+14. teamPager_swipeUpdatesSelectedTeam
+
+	v1: PASSA
+	
+	v2: PASSA
+
+
+TOTALE: 14 tests
+
+PASSANO IN V2: 9 tests
+
+NON PASSANO IN V2: 5 tests
+
+	Cause:
+		- Messaggio di welcome è diverso tra le due versioni (1)
+		- content-desc del sort button delle tasks è diversa tra le due versioni (8, 11)
+		- Ordinamento delle tasks fatto secondo numero di assigned members in V2, rispetto a ordine alfabetico in V1 (8, 11)
+		- Gli headers delle sezioni di teams e tasks sono stati rinominati in V2 rispetto a V1 (10, 13)
+
+REPAIRED: 3/5 tests (con gli altri 2/5 riparati parzialmente)
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "appium:deviceName": "emulator-5554",
+  "appium:app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\App\\ThesisApp\\app\\build\\intermediates\\apk\\debug\\app-debug.apk",
+  "appium:automationName": "UiAutomator2"
+}

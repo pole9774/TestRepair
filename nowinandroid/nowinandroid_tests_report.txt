@@ -1,0 +1,214 @@
+Test scritti per nowinandroid 0.0.5
+Si vogliono vedere i risultati sulla versione più recente.
+
+
+1. firstScreen_isForYou
+
+	- v0.0.5: PASSA
+	
+	- New: NON PASSA (view che contiene For you è diversa)
+	
+	- Repaired: YES
+
+
+2. navigationBar_navigateToPreviouslySelectedTab_restoresContent
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+
+3. navigationBar_reselectTab_keepsState
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+4. topLevelDestinations_doNotShowBackArrow
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+5. topLevelDestinations_showTopBarWithTitle
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+
+6. topLevelDestinations_showSettingsIcon
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+7. whenSettingsIconIsClicked_settingsDialogIsShown
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+8. whenSettingsDialogDismissed_previousScreenIsDisplayed
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+9. homeDestination_back_quitsApp
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+10. navigationBar_backFromAnyDestination_returnsToForYou
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+11. navigationBar_multipleBackStackInterests
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+12. newsResourceCard_withDateAndResourceType
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+
+13. testTopicsChipColorBackground_matchesFollowedState
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+14. feed_whenHasBookmarks_showsBookmarks
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+15. feed_whenRemovingBookmark_removesBookmark
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+16. feed_whenHasNoBookmarks_showsEmptyState
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+
+17. topicSelector_whenNoTopicsSelected_showsTopicChipsAndDisabledDoneButton
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+18. topicSelector_whenSomeTopicsSelected_showsTopicChipsAndEnabledDoneButton
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+19. feed_whenNoInterestsSelectionAndLoaded_showsFeed
+
+	- v0.0.5: PASSA
+	
+	- New: NON PASSA (content-desc unfollow button diversa)
+	
+	- Repaired: YES
+	
+	
+20. interestsWithTopics_whenTopicsFollowed_showFollowedAndUnfollowedTopicsWithInfo
+
+	- v0.0.5: PASSA
+	
+	- New: NON PASSA (content-desc follow/unfollow button diverse)
+	
+	- Repaired: YES
+	
+	
+21. whenStateIsSuccess_allDefaultSettingsAreDisplayed
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+22. whenStateIsSuccess_supportsDynamicColor_usesDefaultBrand_DynamicColorOptionIsDisplayed
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+23. whenStateIsSuccess_usesAndroidBrand_DynamicColorOptionIsNotDisplayed
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+24. whenStateIsSuccess_allLinksAreDisplayed
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+
+25. topicTitle_whenTopicIsSuccess_isShown
+
+	- v0.0.5: PASSA
+	
+	- New: PASSA
+	
+	
+26. news_whenSuccessAndTopicIsSuccess_isShown
+
+	- v0.0.5: PASSA
+	
+	- New: NON PASSA (xpath della view dei dettagli topic da scrollare è diverso)
+	
+	- Repaired: PARTIALLY (non capisce che deve tornare in alto per premere 'back', ma il resto è riparato)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Appium Inspector JSON Representation:
+
+v0.0.5 (i test runnano con la variante DemoDebug, l'app runna con la variante DemoDebug, l'AUT è la variante DemoDebug):
+
+{
+  "platformName": "Android",
+  "appium:deviceName": "emulator-5554",
+  "appium:app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\App\\nowinandroid\\app\\build\\intermediates\\apk\\demo\\debug\\app-demo-debug.apk",
+  "appium:automationName": "UiAutomator2"
+}
+
+New (i test runnano con la variante DemoDebug, l'app runna con la variante DemoRelease, l'AUT è la variante DemoRelease):
+
+{
+  "platformName": "Android",
+  "appium:deviceName": "emulator-5554",
+  "appium:app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\App\\nowinandroid\\app\\build\\intermediates\\apk\\demo\\release\\app-demo-release.apk",
+  "appium:automationName": "UiAutomator2"
+}
