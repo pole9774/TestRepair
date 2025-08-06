@@ -1,0 +1,30 @@
+Test scritti per Mgit v1.5.1
+Si vogliono vedere risultati su Mgit v1.6.1
+
+test-1:
+	v1.5.1: PASSA
+	v1.6.1: NON PASSA (line 31: id del widget non presente in questa versione, c'è solo il text; line 39: id bottone diverso)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.5.1.apk",
+  "appWaitActivity": "com.manichord.mgit.*",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.6.1.apk",
+  "appWaitActivity": "com.manichord.mgit.*",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
