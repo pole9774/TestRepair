@@ -3,23 +3,23 @@ Si vogliono vedere risultati su openBikeSharing v1.10.0
 
 test-1:
 	v1.0: PASSA
-	v1.10.0: 
+	v1.10.0: NON PASSA (line 29: 'refresh' spostato in 'more options')
 
 test-2:
 	v1.0: PASSA
-	v1.10.0: 
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
 
 test-3:
 	v1.0: PASSA
-	v1.10.0: 
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
 
 test-4:
 	v1.0: PASSA
-	v1.10.0: 
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
 
 test-5:
 	v1.0: PASSA
-	v1.10.0: 
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
