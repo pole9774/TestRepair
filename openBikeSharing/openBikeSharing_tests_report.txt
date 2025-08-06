@@ -1,0 +1,46 @@
+Test scritti per openBikeSharing v1.0
+Si vogliono vedere risultati su openBikeSharing v1.10.0
+
+test-1:
+	v1.0: PASSA
+	v1.10.0: 
+
+test-2:
+	v1.0: PASSA
+	v1.10.0: 
+
+test-3:
+	v1.0: PASSA
+	v1.10.0: 
+
+test-4:
+	v1.0: PASSA
+	v1.10.0: 
+
+test-5:
+	v1.0: PASSA
+	v1.10.0: 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.0.apk",
+  "appWaitActivity": "be.brunoparmentier.openbikesharing.app.*",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.10.0.apk",
+  "appWaitActivity": "be.brunoparmentier.openbikesharing.app.*",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
