@@ -1,0 +1,28 @@
+Test scritti per SoundBoard v0.91
+Si vogliono vedere risultati su SoundBoard v0.92
+
+test-1:
+	v0.91: PASSA
+	v0.92: PASSA
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SoundBoard\\SoundBoard v0.91.apk",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SoundBoard\\SoundBoard v0.92.apk",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
