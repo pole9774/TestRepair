@@ -1,0 +1,30 @@
+Test scritti per SuperGenPass v2.2.2
+Si vogliono vedere risultati su SuperGenPass v3.0.0
+
+test-1:
+	v2.2.2: PASSA
+	v3.0.0: 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SuperGenPass\\SuperGenPass v2.2.2.apk",
+  "appActivity": "info.staticfree.SuperGenPass.Super_Gen_Pass",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SuperGenPass\\SuperGenPass v3.0.0.apk",
+  "appActivity": "info.staticfree.SuperGenPass.Super_Gen_Pass",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}

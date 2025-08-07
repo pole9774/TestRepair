@@ -1,0 +1,45 @@
+import time
+from appium.options.android import UiAutomator2Options
+from appium import webdriver
+from appium.webdriver.common.appiumby import AppiumBy
+
+desired_caps = {
+    "platformName": "Android",
+    "deviceName": "emulator-5554",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SuperGenPass\\SuperGenPass v2.2.2.apk",
+    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\SuperGenPass\\SuperGenPass v3.0.0.apk",
+    "appActivity": "info.staticfree.SuperGenPass.Super_Gen_Pass",
+    "noReset": True,
+    "automationName": "UiAutomator2"
+}
+
+options = UiAutomator2Options()
+for key, value in desired_caps.items():
+    options.set_capability(key, value)
+
+driver = webdriver.Remote("http://localhost:4723", options=options)
+driver.implicitly_wait(20)
+
+# test case1: Generate a password and copy it
+
+time.sleep(5)
+
+el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/domain_edit")
+el.send_keys("192.168.1.100")
+
+el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/password_edit")
+el.send_keys("000000")
+
+el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
+el.click()
+time.sleep(1)
+
+el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
+el.click()
+time.sleep(1)
+
+el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/copy")
+el.click()
+time.sleep(1)
+
+driver.quit()
