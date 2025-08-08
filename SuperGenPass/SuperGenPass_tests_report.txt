@@ -3,23 +3,26 @@ Si vogliono vedere risultati su SuperGenPass v3.0.0
 
 test-1:
 	v2.2.2: PASSA
-	v3.0.0: 
+	v3.0.0: PASSA
 
 test-2:
 	v2.2.2: PASSA
-	v3.0.0: 
+	v3.0.0: PASSA
 
 test-3:
 	v2.2.2: PASSA
-	v3.0.0: 
+	v3.0.0: NON PASSA (line 35: checkbox hanno 'id' diverso in questa versione)
 
 test-4:
 	v2.2.2: PASSA
-	v3.0.0: 
+	v3.0.0: PASSA
 
 test-5:
 	v2.2.2: PASSA
-	v3.0.0: 
+	v3.0.0: NON PASSA (line 41: non c'è più separazione 'password'-'pin')
+
+
+(Le 2 versioni dell'app hanno problemi di visualizzazione in Appium Inspector)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
