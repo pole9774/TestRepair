@@ -20,26 +20,49 @@ for key, value in desired_caps.items():
 driver = webdriver.Remote("http://localhost:4723", options=options)
 driver.implicitly_wait(20)
 
-# test case 1: Generate a password and copy it
+# test case 3: More options, settings are outdated
 
 time.sleep(5)
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/domain_edit")
-el.send_keys("192.168.1.100")
-
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/password_edit")
-el.send_keys("000000")
-
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
+el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageButton")[0]
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
+el = driver.find_elements(AppiumBy.ID, "android:id/title")[1]
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/copy")
+el = driver.find_elements(AppiumBy.ID, "android:id/checkbox")[0]
 el.click()
 time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/checkbox")[1]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/checkbox")[2]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/checkbox")[3]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/title")[3]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.ID, "android:id/title")[5]
+el.click()
+time.sleep(1)
+
+el = driver.find_element(AppiumBy.ID, "android:id/edit")
+el.send_keys("3")
+
+el = driver.find_element(AppiumBy.ID, "android:id/button1")
+el.click()
+time.sleep(1)
+
+driver.back()
 
 driver.quit()

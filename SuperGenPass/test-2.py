@@ -20,26 +20,22 @@ for key, value in desired_caps.items():
 driver = webdriver.Remote("http://localhost:4723", options=options)
 driver.implicitly_wait(20)
 
-# test case 1: Generate a password and copy it
+# test case 2: More options, verify master password
+# note: to be executed after test-1.py
 
 time.sleep(5)
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/domain_edit")
-el.send_keys("192.168.1.100")
+el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageButton")[0]
+el.click()
+time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/password_edit")
+el = driver.find_elements(AppiumBy.ID, "android:id/title")[0]
+el.click()
+time.sleep(1)
+
+el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.EditText")[0]
 el.send_keys("000000")
 
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
-el.click()
-time.sleep(1)
-
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/show_gen_password")
-el.click()
-time.sleep(1)
-
-el = driver.find_element(AppiumBy.ID, "info.staticfree.SuperGenPass:id/copy")
-el.click()
-time.sleep(1)
+time.sleep(5)
 
 driver.quit()
