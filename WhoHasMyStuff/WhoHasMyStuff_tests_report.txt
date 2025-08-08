@@ -1,0 +1,44 @@
+Test scritti per WhoHasMyStuff v1.0.24
+Si vogliono vedere risultati su WhoHasMyStuff v1.0.38
+
+test-1:
+	v1.0.24: PASSA
+	v1.0.38: 
+
+test-2:
+	v1.0.24: PASSA
+	v1.0.38: 
+
+test-3:
+	v1.0.24: PASSA
+	v1.0.38: 
+
+test-4:
+	v1.0.24: PASSA
+	v1.0.38: 
+
+test-5:
+	v1.0.24: PASSA
+	v1.0.38: 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.24.apk",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.38.apk",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
