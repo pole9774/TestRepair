@@ -6,8 +6,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 desired_caps = {
     "platformName": "Android",
     "deviceName": "emulator-5554",
-    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.24.apk",
-    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.38.apk",
+    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.24.apk",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WhoHasMyStuff\\WhoHasMyStuff v1.0.38.apk",
     "noReset": True,
     "automationName": "UiAutomator2"
 }
