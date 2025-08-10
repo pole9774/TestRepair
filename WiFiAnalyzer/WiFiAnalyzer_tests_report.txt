@@ -1,7 +1,8 @@
 Test scritti per WiFiAnalyzer v1.9.2
 Si vogliono vedere risultati su WiFiAnalyzer v2.1.2
 
-(sarebbe da testare su un dispositivo reale)
+
+(sarebbe da testare su un dispositivo reale, ma l'installazione sul mio smartphone fallisce)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -11,7 +12,7 @@ Appium Inspector JSON Representation:
 
 {
   "platformName": "Android",
-  "deviceName": "emulator-5554",
+  "deviceName": "ce031713e8c3a03e0c",
   "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WiFiAnalyzer\\WiFiAnalyzer v1.9.2.apk",
   "appWaitActivity": "com.vrem.wifianalyzer.*",
   "noReset": true,
@@ -20,7 +21,7 @@ Appium Inspector JSON Representation:
 
 {
   "platformName": "Android",
-  "deviceName": "emulator-5554",
+  "deviceName": "ce031713e8c3a03e0c",
   "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\WiFiAnalyzer\\WiFiAnalyzer v2.1.2.apk",
   "appWaitActivity": "com.vrem.wifianalyzer.*",
   "noReset": true,
