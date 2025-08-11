@@ -1,0 +1,21 @@
+Test scritti per DaysMatter v0.5.0
+Si vogliono vedere risultati su DaysMatter v0.7.3
+
+test-1:
+	v0.5.0: PASSA
+	v0.7.3: 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.clover.daysmatter",
+  "appActivity": "com.clover.daysmatter.ui.activity.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
