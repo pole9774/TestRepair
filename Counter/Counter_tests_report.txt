@@ -1,0 +1,25 @@
+Test scritti per Counter v13
+Si vogliono vedere risultati su Counter v18
+
+test-1:
+	v13: PASSA
+	v18: NON PASSA (line 24: 'id' tasto sidebar diverso)
+
+test-2:
+	v13: PASSA
+	v18: PASSA
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "me.tsukanov.counter",
+  "appActivity": "me.tsukanov.counter.ui.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
