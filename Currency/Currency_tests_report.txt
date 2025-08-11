@@ -1,0 +1,25 @@
+Test scritti per Currency v1.0
+Si vogliono vedere risultati su Currency v1.35
+
+test-1:
+	v1.0: PASSA
+	v1.35: NON PASSA (line 24: in questa versione 'more options' -> 'settings')
+
+test-2:
+	v1.0: PASSA
+	v1.35: NON PASSA (line 24: in questa versione 'more options' -> 'settings')
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "org.billthefarmer.currency",
+  "appActivity": "org.billthefarmer.currency.Main",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
