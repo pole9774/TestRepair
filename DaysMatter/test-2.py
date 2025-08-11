@@ -18,15 +18,11 @@ for key, value in desired_caps.items():
 
 driver = webdriver.Remote("http://localhost:4723", options=options)
 
-time.sleep(5)
+time.sleep(10)
 
 try:
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Open the main menu')
-    el1.click()
-    time.sleep(3)
-
-    el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Life")') # side bar Life
-    el2.click()
+    el = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageView")[1] # bottom bar Today in History
+    el.click()
 
 finally:
     time.sleep(5)
