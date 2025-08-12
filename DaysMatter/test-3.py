@@ -25,7 +25,7 @@ try:
     el1.click()
     time.sleep(3)
 
-    el2 = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageView")[10] # side bar Manage Category
+    el2 = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.ImageView")[10] # side bar Manage Category (Manage DaysMatter Book in v2)
     el2.click()
 
 finally:

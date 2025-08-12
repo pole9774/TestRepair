@@ -1,41 +1,44 @@
 Test scritti per DaysMatter v0.5.0
 Si vogliono vedere risultati su DaysMatter v0.7.3
 
+Problemi di lentezza in v0.7.3 per esecuzione test e appium inspector. Sembra legato a un gran numero di views.
+Probabilmente questa app è da escludere dal dataset, in quanto un'analisi accurata è pressoché impossibile.
+
 test-1:
 	v0.5.0: PASSA
 	v0.7.3: PASSA
 
 test-2:
 	v0.5.0: PASSA
-	v0.7.3: 
+	v0.7.3: NON PASSA (line 24: l'elemento cercato non corrisponde più a 'bottom bar Today in History', ma sembra essere un'ombra sotto 'Saturday arrives in...')
 
 test-3:
 	v0.5.0: PASSA
-	v0.7.3: 
+	v0.7.3: NON PASSA (line 28: l'elemento cercato non corrisponde più a 'side bar Manage Category/Book', ma sembra essere l'icona di 'side bar Life')
 
 test-4:
 	v0.5.0: PASSA
-	v0.7.3: 
+	v0.7.3: NON PASSA (line 28: l'elemento cercato non corrisponde più a 'side bar Work', ma sembra essere 'side bar Home Event')
 
 test-5:
 	v0.5.0: PASSA
-	v0.7.3: 
+	v0.7.3: PASSA
 
 test-6:
 	v0.5.0: PASSA
-	v0.7.3: 
+	v0.7.3: NON PASSA (line 24: Date Calculator non è più accessibile direttamente dalla bottom bar)
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Appium Inspector JSON Representation:
 
 {
   "platformName": "Android",
-  "deviceName": "emulator-5554",
-  "appPackage": "com.clover.daysmatter",
-  "appActivity": "com.clover.daysmatter.ui.activity.MainActivity",
-  "noReset": true,
-  "automationName": "UiAutomator2"
+  "appium:deviceName": "emulator-5554",
+  "appium:appPackage": "com.clover.daysmatter",
+  "appium:appActivity": "com.clover.daysmatter.ui.activity.MainActivity",
+  "appium:noReset": true,
+  "appium:automationName": "UiAutomator2"
 }
