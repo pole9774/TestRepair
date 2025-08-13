@@ -1,0 +1,22 @@
+Test scritti per DumbphoneAssistant v0.4
+Si vogliono vedere risultati su DumbphoneAssistant v0.5
+
+
+test-1:
+	v0.4: PASSA
+	v0.5: NON PASSA (line 24: 'Sim Card' è diventato 'Sim Card (0)', o in generale penso 'Sim Card (N)')
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.github.yeriomin.dumbphoneassistant",
+  "appActivity": "com.github.yeriomin.dumbphoneassistant.ManageContactsActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
