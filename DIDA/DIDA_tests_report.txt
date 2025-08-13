@@ -1,9 +1,11 @@
 Test scritti per DIDA 5.7.0.0
 Si vogliono vedere risultati su DIDA 5.8.8.1
 
+(credenziali: aaa...@email.com , aaaaaa)
+
 test-1:
 	v5.7.0.0: PASSA
-	v5.8.8.1: 
+	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar')
 
 test-2:
 	v5.7.0.0: PASSA
@@ -26,7 +28,7 @@ test-6:
 	v5.8.8.1: 
 
 test-7:
-	v5.7.0.0: NON PASSA (line 36)
+	v5.7.0.0: NON PASSA (line 36: cerca un 'android.widget.Image' che non c'è)
 	v5.8.8.1: 
 
 test-8:
