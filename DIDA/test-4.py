@@ -21,6 +21,7 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 # start from the Template (settings) page, enable template
+# per v2: 'enable template' è scomparso, la pagina è Manage Template
 try:
     el1 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Daily record")')
     el1.click()
