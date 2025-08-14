@@ -1,0 +1,22 @@
+Test scritti per Fwknop v1.0.0
+Si vogliono vedere risultati su Fwknop v1.2.3
+
+
+test-1:
+	v1.0.0: PASSA
+	v1.2.3: NON PASSA (line 28: 'New config' invece che 'New Config', la 'c' è minuscola in questa versione)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "org.cipherdyne.fwknop2",
+  "appActivity": "biz.incomsystems.fwknop2.ConfigListActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
