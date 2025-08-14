@@ -1,0 +1,22 @@
+Test scritti per Fon 1.5.1
+Si vogliono vedere risultati su Fon 1.5.2
+
+
+test-1:
+	v1.5.1: PASSA
+	v1.5.2: PASSA, branch: PASSA
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.oakley.fon",
+  "appActivity": "com.oakley.fon.AndroidWISPr",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
