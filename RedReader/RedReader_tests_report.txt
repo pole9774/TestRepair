@@ -1,0 +1,26 @@
+Test scritti per RedReader v1.14.0
+Si vogliono vedere risultati su RedReader v1.23.1
+
+
+test-1:
+	v1.14.0: PASSA
+	v1.23.1: NON PASSA (fallisce a line 28, problema a line 24: 'Custom Location' spostato nella pagina)
+    
+test-2:
+	v1.14.0: PASSA
+	v1.23.1: NON PASSA (fallisce a line 28, problema a line 24: 'Custom Location' spostato nella pagina)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "org.quantumbadger.redreader",
+  "appActivity": "org.quantumbadger.redreader.activities.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
