@@ -1,0 +1,26 @@
+Test scritti per MyObservatory v4.20.3
+Si vogliono vedere risultati su MyObservatory v5.0.0
+
+
+test-1:
+	v4.20.3: PASSA
+	v5.0.0: NON PASSA (line 24: tasto 'Add' spostato. Bisogna fare 'Regional Weather' -> 'Add Locations')
+
+test-2:
+	v4.20.3: NON PASSA (line 24: cerca un elemento che non c'è. Bisognerebbe swipare a sx invece di premere l'elemento cercato)
+	v5.0.0: NON PASSA (line 24: bisognerebbe tirar su la tendina invece di premere l'elemento cercato)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "hko.MyObservatory_v1_0",
+  "appActivity": "hko.homepage.Homepage2Activity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
