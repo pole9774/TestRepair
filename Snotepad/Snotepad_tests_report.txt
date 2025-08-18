@@ -1,0 +1,22 @@
+Test scritti per Snotepad v1.0.0
+Si vogliono vedere risultati su Snotepad v1.2.1
+
+
+test-1:
+	v1.0.0: PASSA
+	v1.2.1: PASSA, branch: PASSA
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "info.aario.snotepad",
+  "appActivity": "info.aario.snotepad.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
