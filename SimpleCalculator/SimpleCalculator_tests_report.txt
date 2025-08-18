@@ -1,0 +1,34 @@
+Test scritti per SimpleCalculator v2.0.0
+Si vogliono vedere risultati su SimpleCalculator v3.1.2
+
+
+test-1:
+	v2.0.0: PASSA
+	v3.1.2: 
+
+test-2:
+	v2.0.0: 
+	v3.1.2: 
+
+test-3:
+	v2.0.0: 
+	v3.1.2: 
+
+test-4:
+	v2.0.0: 
+	v3.1.2: 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.simplemobiletools.calculator",
+  "appActivity": "com.simplemobiletools.calculator.activities.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
