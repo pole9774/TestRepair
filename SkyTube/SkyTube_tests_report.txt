@@ -1,0 +1,24 @@
+Test scritti per SkyTube v2.7.0
+Si vogliono vedere risultati su SkyTube v2.8.0
+
+
+test-1:
+	v2.7.0: PASSA
+	v2.8.0: PASSA
+            branch1: PASSA
+            branch2: PASSA
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Appium Inspector JSON Representation:
+
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "appPackage": "free.rm.skytube.extra",
+  "appActivity": "free.rm.skytube.gui.activities.MainActivity",
+  "noReset": true,
+  "automationName": "UiAutomator2"
+}
