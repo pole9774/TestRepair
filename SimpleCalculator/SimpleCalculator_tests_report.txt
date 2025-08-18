@@ -4,15 +4,16 @@ Si vogliono vedere risultati su SimpleCalculator v3.1.2
 
 test-1:
 	v2.0.0: PASSA
-	v3.1.2: 
+	v3.1.2: PASSA, branch: PASSA
 
 test-2:
 	v2.0.0: PASSA
-	v3.1.2: 
+	v3.1.2: PASSA, branch: PASSA
 
 test-3:
 	v2.0.0: PASSA
-	v3.1.2: 
+	v3.1.2: NON PASSA (line 36: nella nuova versione è 'Light' invece che 'Light theme')
+            branch: NON PASSA (line 45: nella nuova versione è 'Dark' invece che 'Dark theme)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
