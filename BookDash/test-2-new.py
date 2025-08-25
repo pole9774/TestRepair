@@ -23,8 +23,24 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_elements(AppiumBy.ID, 'org.bookdash.android:id/action_language_choice')[0]
+    el1 = driver.find_elements(AppiumBy.ID, 'org.bookdash.android:id/action_search_books')[0]
     el1.click()
+    time.sleep(1)
+
+    el2 = driver.find_elements(AppiumBy.ID, 'org.bookdash.android:id/search_src_text')[0]
+    el2.clear()
+    time.sleep(1)
+
+    el3 =  driver.find_elements(AppiumBy.ID, 'org.bookdash.android:id/search_src_text')[0]
+    el3.send_keys("Test")
+    time.sleep(1)
+
+    driver.press_keycode(66) # ENTER
+    time.sleep(1)
+
+    el4 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, "Navigate up") # Back button
+    el4.click()
+    time.sleep(1)
 
 finally:
     time.sleep(3)
