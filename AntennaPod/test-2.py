@@ -26,11 +26,11 @@ driver.implicitly_wait(20)
 
 time.sleep(5)
 
-el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Open menu')[0]
+el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Open menu')[0] # Open side bar
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/txtvTitle')[1]
+el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/txtvTitle')[1] # Episodes
 el.click()
 time.sleep(1)
 
@@ -42,7 +42,7 @@ el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'More options')[0]
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[0]
+el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[0] # Refresh
 el.click()
 time.sleep(1)
 
@@ -50,11 +50,11 @@ el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'More options')[0]
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[1]
+el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[1] # Remove all "new" flags
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'android:id/button2')
+el = driver.find_element(AppiumBy.ID, 'android:id/button2') # Cancel
 el.click()
 time.sleep(1)
 
@@ -62,15 +62,15 @@ el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'More options')[0]
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[1]
+el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/title')[1] # Remove all "new" flags
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'android:id/button1')
+el = driver.find_element(AppiumBy.ID, 'android:id/button1') # Confirm
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Collapse')[0]
+el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Collapse')[0] # Back
 el.click()
 time.sleep(1)
 

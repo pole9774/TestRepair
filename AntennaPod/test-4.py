@@ -26,11 +26,11 @@ driver.implicitly_wait(20)
 
 time.sleep(5)
 
-el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Open menu')[0]
+el = driver.find_elements(AppiumBy.ACCESSIBILITY_ID, 'Open menu')[0] # Open side bar
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/txtvTitle')[4]
+el = driver.find_elements(AppiumBy.ID, 'de.danoeh.antennapod:id/txtvTitle')[4] # Playback History
 el.click()
 time.sleep(1)
 
