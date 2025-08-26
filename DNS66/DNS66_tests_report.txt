@@ -21,6 +21,10 @@ test-5:
 	v0.4.1: PASSA
 	v0.6.8: NON PASSA (line 29: id navigation bar diversi, line 41: id fab diverso)
 
+test-6-new:
+	v0.4.1: PASSA
+	v0.6.8: NON PASSA (indici Show Notifications e About diversi per questa versione)
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
