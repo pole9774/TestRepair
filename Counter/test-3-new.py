@@ -29,7 +29,7 @@ try:
     el2.click()
     time.sleep(3)
 
-    el3 = driver.find_element(AppiumBy.ID, 'android:id/button3')
+    el3 = driver.find_element(AppiumBy.ID, 'android:id/button3') # Close
     el3.click()
 
 finally:

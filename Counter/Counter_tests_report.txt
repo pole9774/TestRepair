@@ -11,19 +11,19 @@ test-2:
 
 test-3-new:
   v13: PASSA
-  v18: 
+  v18: NON PASSA (funzionalità eliminata in questa versione)
 
 test-4-new:
   v13: PASSA
-  v18: 
+  v18: PASSA
 
 test-5-new:
   v13: PASSA
-  v18: 
+  v18: PASSA
 
 test-6-new:
   v13: PASSA
-  v18: 
+  v18: PASSA
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
