@@ -26,7 +26,7 @@ driver.implicitly_wait(20)
 
 time.sleep(5)
 
-el = driver.find_elements(AppiumBy.ID, 'org.jak_linux.dns66:id/bottom_navigation_item_title')[2]
+el = driver.find_elements(AppiumBy.ID, 'org.jak_linux.dns66:id/bottom_navigation_item_title')[2] # bottom bar - Apps
 el.click()
 time.sleep(1)
 

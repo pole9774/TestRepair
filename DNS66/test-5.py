@@ -26,7 +26,7 @@ driver.implicitly_wait(20)
 
 time.sleep(5)
 
-el = driver.find_elements(AppiumBy.ID, 'org.jak_linux.dns66:id/bottom_navigation_item_title')[3]
+el = driver.find_elements(AppiumBy.ID, 'org.jak_linux.dns66:id/bottom_navigation_item_title')[3] # bottom bar - DNS Servers
 el.click()
 time.sleep(1)
 
@@ -38,7 +38,7 @@ el = driver.find_element(AppiumBy.ID, 'org.jak_linux.dns66:id/dns_enabled')
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'org.jak_linux.dns66:id/dns_add')
+el = driver.find_element(AppiumBy.ID, 'org.jak_linux.dns66:id/dns_add') # FAB
 el.click()
 time.sleep(1)
 

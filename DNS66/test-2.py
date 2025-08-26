@@ -33,7 +33,7 @@ driver.execute_script("mobile: longClickGesture", {
 })
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'android:id/button1')[0]
+el = driver.find_elements(AppiumBy.ID, 'android:id/button1')[0] # Yes
 el.click()
 time.sleep(1)
 
