@@ -21,20 +21,19 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Add')
+    el = driver.find_element(AppiumBy.ID, 'org.billthefarmer.currency:id/edit')
     el.click()
     time.sleep(3)
 
-    el = driver.find_element(AppiumBy.ID, 'org.billthefarmer.currency:id/cancel')
-    el.click()
+    el = driver.find_element(AppiumBy.ID, 'org.billthefarmer.currency:id/edit')
+    el.clear()
     time.sleep(3)
 
-    el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Add')
-    el.click()
+    el = driver.find_element(AppiumBy.ID, 'org.billthefarmer.currency:id/edit')
+    el.send_keys("42.000")
     time.sleep(3)
 
-    el = driver.find_elements(AppiumBy.ID, 'org.billthefarmer.currency:id/name')[2] # JPY
-    el.click()
+    driver.execute_script("mobile: performEditorAction", {"action": "done"})
 
 finally:
     time.sleep(5)
