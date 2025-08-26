@@ -33,7 +33,7 @@ try:
     el3.click()
     time.sleep(3)
 
-    el4 = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.Image")[3]
+    el4 = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.Image")[0] # My Achievement Score (index modificato da test originale 3 -> 0)
     el4.click()
 
 finally:

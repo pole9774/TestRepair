@@ -5,7 +5,7 @@ Si vogliono vedere risultati su DIDA 5.8.8.1
 
 test-1:
 	v5.7.0.0: PASSA
-	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar')
+	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; line 32: elemento diverso in questa versione)
 
 test-2:
 	v5.7.0.0: PASSA
@@ -25,18 +25,18 @@ test-5:
 
 test-6:
 	v5.7.0.0: PASSA
-	v5.8.8.1: NON PASSA (line 28: 'edit multiple tasks' scomparso)
+	v5.8.8.1: NON PASSA (line 28: 'edit multiple tasks' è diventato 'Select' in questa versione)
 
 test-7:
-	v5.7.0.0: NON PASSA (line 36: cerca un 'android.widget.Image' che non c'è)
-	v5.8.8.1: -
+	v5.7.0.0: PASSA (line 36: modifica rispetto a test originale, per fare passare il test)
+	v5.8.8.1: NON PASSA (problema a line 24: clicca il fab e non il tasto 'open side bar'; line 28: settings button ha 'id' diverso; line 32: elemento non trovato, usare freccia dx per raggiungere la pagina voluta; line 36: elemento diverso in questa versione)
 
 test-8:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Follow WeChat Official Account' cambiato in 'Add Tasks in Wechat')
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Appium Inspector JSON Representation:
