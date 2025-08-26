@@ -21,12 +21,8 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Settings')
-    el1.click()
-    time.sleep(3)
-
-    el2 = driver.find_elements(AppiumBy.CLASS_NAME, 'android.widget.TextView')[10] # About
-    el2.click()
+    el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Refresh')
+    el.click()
 
 finally:
     time.sleep(5)
