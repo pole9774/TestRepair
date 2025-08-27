@@ -1,6 +1,10 @@
 Test scritti per KeePassDroid v2.0.6.4
 Si vogliono vedere risultati su KeePassDroid v2.2.0.9
 
+
+(I test presenti passano tutti in entrambe le versioni. App probabilmente da escludere dal dataset.)
+
+
 test-1:
 	v2.0.6.4: PASSA
 	v2.2.0.9: PASSA

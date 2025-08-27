@@ -31,7 +31,7 @@ el.click()
 
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, "com.android.keepass:id/about_button")
+el = driver.find_element(AppiumBy.ID, "com.android.keepass:id/about_button") # OK
 el.click()
 
 time.sleep(1)
