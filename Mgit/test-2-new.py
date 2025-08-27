@@ -6,8 +6,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 desired_caps = {
     "platformName": "Android",
     "deviceName": "emulator-5554",
-    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.5.1.apk",
-    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.6.1.apk",
+    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.5.1.apk",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\Mgit\\Mgit v1.6.1.apk",
     "appWaitActivity": "com.manichord.mgit.*",
     "noReset": True,
     "automationName": "UiAutomator2"
@@ -20,24 +20,23 @@ for key, value in desired_caps.items():
 driver = webdriver.Remote("http://localhost:4723", options=options)
 driver.implicitly_wait(20)
 
-# test case 1: Clone
+# test case 1: Search
 
 time.sleep(15)
 
-el = driver.find_element(AppiumBy.ID, 'com.manichord.mgit:id/action_new') # + button
+el = driver.find_element(AppiumBy.ID, 'com.manichord.mgit:id/action_search')
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'com.manichord.mgit:id/remoteURL')
-el.send_keys('https://github.com/Vallxy/Vallxy.github.io.git')
+el = driver.find_element(AppiumBy.ID, 'android:id/search_src_text')
+el.send_keys('test')
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'com.manichord.mgit:id/localPath')
-el.send_keys('Vallxy')
+driver.press_keycode(66) # ENTER
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'android:id/button1') # Clone
+el = driver.find_element(AppiumBy.ID, 'android:id/up')
 el.click()
-time.sleep(60)
+time.sleep(1)
 
 driver.quit()

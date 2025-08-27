@@ -5,8 +5,12 @@ test-1:
 	v1.5.1: PASSA
 	v1.6.1: NON PASSA (line 31: id del widget non presente in questa versione, c'è solo il text; line 39: id bottone diverso)
 
+test-2-new:
+  v1.5.1: PASSA
+  v1.6.1: NON PASSA (line 31: nella nuova versione bisogna prima cliccare il 'search button', inoltre 'id' dell'elemento cercato è diverso nella nuova versione; line 38: back button identificato diversamente nella nuova versione)
 
------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Appium Inspector JSON Representation:
