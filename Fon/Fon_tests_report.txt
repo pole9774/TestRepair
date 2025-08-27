@@ -2,9 +2,20 @@ Test scritti per Fon 1.5.1
 Si vogliono vedere risultati su Fon 1.5.2
 
 
+(I test passano tutti su entrambe le versioni. Probabilmente app da escludere dal dataset.)
+
+
 test-1:
 	v1.5.1: PASSA
-	v1.5.2: PASSA, branch: PASSA
+	v1.5.2: PASSA
+
+test-1-b1:
+	v1.5.1: PASSA
+	v1.5.2: PASSA
+
+test-2-new:
+	v1.5.1: PASSA
+	v1.5.2: PASSA
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
