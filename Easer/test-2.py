@@ -21,7 +21,7 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Open navigation drawer')
+    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Open navigation drawer') # Open side bar
     el1.click()
     time.sleep(3)
 
@@ -35,19 +35,6 @@ try:
 
     el4 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Add")')
     el4.click()
-
-    # # branch
-    # el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Open navigation drawer')
-    # el1.click()
-    # time.sleep(3)
-    #
-    # el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Event")')
-    # el2.click()
-    # time.sleep(3)
-    #
-    # el3 = driver.find_elements(AppiumBy.ID, 'ryey.easer:id/fab')[0]
-    # el3.click()
-    # time.sleep(3)
 
 finally:
     time.sleep(5)

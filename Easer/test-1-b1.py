@@ -21,7 +21,7 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
+    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Open navigation drawer') # Open side bar
     el1.click()
     time.sleep(3)
 
