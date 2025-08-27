@@ -2,6 +2,9 @@ Test scritti per MyObservatory v4.20.3
 Si vogliono vedere risultati su MyObservatory v5.0.0
 
 
+(Dubbio se usare questa app.)
+
+
 test-1:
 	v4.20.3: PASSA
 	v5.0.0: NON PASSA (line 24: tasto 'Add' spostato. Bisogna fare 'Regional Weather' -> 'Add Locations')
