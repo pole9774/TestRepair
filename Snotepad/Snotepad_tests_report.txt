@@ -2,9 +2,24 @@ Test scritti per Snotepad v1.0.0
 Si vogliono vedere risultati su Snotepad v1.2.1
 
 
+(I test passano tutti su entrambe le versioni.)
+
+
 test-1:
 	v1.0.0: PASSA
-	v1.2.1: PASSA, branch: PASSA
+	v1.2.1: PASSA
+
+test-2-new:
+	v1.0.0: PASSA
+	v1.2.1: PASSA
+
+test-3-new:
+	v1.0.0: PASSA
+	v1.2.1: PASSA
+
+test-4-new:
+	v1.0.0: PASSA
+	v1.2.1 :PASSA
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -21,16 +21,20 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el0 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Search')
-    el0.click()
+    el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
+    el.click()
     time.sleep(3)
 
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
-    el1.click()
+    el = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("About")')
+    el.click()
     time.sleep(3)
 
-    el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Settings")')
-    el2.click()
+    el = driver.find_element(AppiumBy.ID, 'info.aario.snotepad:id/fab') # Donate
+    el.click()
+    time.sleep(3)
+
+    driver.back()
+    time.sleep(3)
 
 finally:
     time.sleep(5)
