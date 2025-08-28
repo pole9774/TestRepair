@@ -27,7 +27,6 @@ try:
 
     el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Private Keys")')
     el2.click()
-    time.sleep(3)
 
 finally:
     time.sleep(5)
