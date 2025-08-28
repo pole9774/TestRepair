@@ -24,19 +24,19 @@ driver.implicitly_wait(20)
 
 time.sleep(5)
 
-el = driver.find_element(AppiumBy.ID, "de.meonwax.soundboard:id/action_new")
+el = driver.find_element(AppiumBy.ID, "de.meonwax.soundboard:id/action_new") # Add
 el.click()
 
-el = driver.find_element(AppiumBy.ID, "android:id/button2")
+el = driver.find_element(AppiumBy.ID, "android:id/button2") # Cancel
 el.click()
 
-el = driver.find_element(AppiumBy.ID, "de.meonwax.soundboard:id/action_new")
+el = driver.find_element(AppiumBy.ID, "de.meonwax.soundboard:id/action_new") # Add
 el.click()
 
-el = driver.find_elements(AppiumBy.ID, "de.meonwax.soundboard:id/directory_entry_name")[0]
+el = driver.find_elements(AppiumBy.ID, "de.meonwax.soundboard:id/directory_entry_name")[0] # Alarms (first folder)
 el.click()
 
-el = driver.find_elements(AppiumBy.ID, "de.meonwax.soundboard:id/directory_entry_name")[1]
+el = driver.find_elements(AppiumBy.ID, "de.meonwax.soundboard:id/directory_entry_name")[1] # select the audio file
 el.click()
 
 driver.quit()

@@ -1,6 +1,8 @@
 Test scritti per SoundBoard v0.91
 Si vogliono vedere risultati su SoundBoard v0.92
 
+(I test passano tutti in entrambe le versioni.)
+
 test-1:
 	v0.91: PASSA
 	v0.92: PASSA
