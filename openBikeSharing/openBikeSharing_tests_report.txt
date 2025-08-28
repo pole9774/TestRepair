@@ -11,18 +11,18 @@ test-2:
 
 test-3:
 	v1.0: PASSA
-	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings'; line 65: MapQuest-OSM scomparso in questa versione)
 
 test-4:
 	v1.0: PASSA
-	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings'; line 37: Licence spostata in About)
 
 test-5:
 	v1.0: PASSA
-	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings')
+	v1.10.0: NON PASSA (fallisce a line 37, problema a line 33: il primo oggetto nella lista è 'refresh' e non 'settings'; line 37: About è android:id/title[4] in questa versione; line 41: nessun tasto OK in questa versione)
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Appium Inspector JSON Representation:

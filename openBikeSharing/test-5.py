@@ -22,7 +22,7 @@ for key, value in desired_caps.items():
 driver = webdriver.Remote("http://localhost:4723", options=options)
 driver.implicitly_wait(20)
 
-# test case 5: More options---About
+# test case 5: More options - About
 
 time.sleep(15)
 
@@ -30,15 +30,15 @@ el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'android:id/title')[0]
+el = driver.find_elements(AppiumBy.ID, 'android:id/title')[0] # Settings
 el.click()
 time.sleep(1)
 
-el = driver.find_elements(AppiumBy.ID, 'android:id/title')[3]
+el = driver.find_elements(AppiumBy.ID, 'android:id/title')[3] # About
 el.click()
 time.sleep(1)
 
-el = driver.find_element(AppiumBy.ID, 'android:id/button1')
+el = driver.find_element(AppiumBy.ID, 'android:id/button1') # OK
 el.click()
 time.sleep(1)
 

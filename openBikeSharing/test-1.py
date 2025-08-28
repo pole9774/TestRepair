@@ -8,8 +8,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 desired_caps = {
     "platformName": "Android",
     "deviceName": "emulator-5554",
-    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.0.apk",
-    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.10.0.apk",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.0.apk",
+    #"app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\openBikeSharing\\openBikeSharing v1.10.0.apk",
     "appWaitActivity": "be.brunoparmentier.openbikesharing.app.*",
     "noReset": True,
     "automationName": "UiAutomator2"
