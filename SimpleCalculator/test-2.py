@@ -36,10 +36,6 @@ try:
     el4 = driver.find_elements(AppiumBy.ID, 'com.simplemobiletools.calculator:id/customization_primary_color_label')[0]
     el4.click()
 
-    # # branch
-    # el4 = driver.find_elements(AppiumBy.ID, 'com.simplemobiletools.calculator:id/customization_primary_color')[0]
-    # el4.click()
-
 finally:
     time.sleep(5)
     driver.quit()

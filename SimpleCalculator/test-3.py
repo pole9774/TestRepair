@@ -33,12 +33,7 @@ try:
     el3.click()
     time.sleep(3)
 
-    # el4 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Light theme")')
-    # el4.click()
-    # time.sleep(3)
-
-    # branch
-    el4 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Theme")')
+    el4 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Light theme")')
     el4.click()
     time.sleep(3)
 
