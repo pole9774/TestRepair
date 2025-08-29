@@ -22,7 +22,7 @@ test-5:
 	v3.0.0: NON PASSA (line 41: non c'è più separazione 'password'-'pin')
 
 
-(Le 2 versioni dell'app hanno problemi di visualizzazione in Appium Inspector)
+(Le 2 versioni dell'app hanno problemi di visualizzazione in Appium Inspector, si vede tutto nero)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
