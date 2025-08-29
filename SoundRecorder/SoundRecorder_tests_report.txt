@@ -4,19 +4,19 @@ Si vogliono vedere risultati su SoundRecorder v1.3.0
 
 test-1:
 	v1.2.5: PASSA
-	v1.3.0: NON PASSA (in questa versione dovrebbe essere 'settings' -> 'about')
+	v1.3.0: NON PASSA (in questa versione dovrebbe essere Settings -> About, dove About sostituisce Licences)
 
 test-2-new:
 	v1.2.5: PASSA
-	v1.3.0: 
+	v1.3.0: PASSA
 
 test-3-new:
 	v1.2.5: PASSA
-	v1.3.0: 
+	v1.3.0: PASSA
 
 test-4-new:
 	v1.2.5: PASSA
-	v1.3.0: 
+	v1.3.0: PASSA
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
