@@ -36,23 +36,23 @@ test-8:
 
 test-9-new:
 	v0.11.0: PASSA
-	v0.15.13: 
+	v0.15.13: NON PASSA (line 32: 'cancel' diverso; 'set' diverso)
 
 test-10-new:
 	v0.11.0: PASSA
-	v0.15.13: 
+	v0.15.13: PASSA
 
 test-11-new:
 	v0.11.0: PASSA
-	v0.15.13: 
+	v0.15.13: PASSA
 
 test-12-new:
 	v0.11.0: PASSA
-	v0.15.13: 
+	v0.15.13: NON PASSA (line 32: 'next' ha ID diverso; 'previous' ha id diverso)
 
 test-13-new:
 	v0.11.0: PASSA
-	v0.15.13: 
+	v0.15.13: NON PASSA (line 32: tasto per selezionare 'map types' ha id diverso; i 'map types' sono di più leggermente diversi; tasti radiali sostituiti da opzioni in map_menu -> options)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
