@@ -21,12 +21,12 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
-    el1.click()
+    el = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Saved Recordings")')
+    el.click()
     time.sleep(3)
 
-    el2 = driver.find_elements(AppiumBy.ID, 'com.danielkim.soundrecorder:id/title')[0] # Licences
-    el2.click()
+    el = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Record")')
+    el.click()
 
 finally:
     time.sleep(5)
