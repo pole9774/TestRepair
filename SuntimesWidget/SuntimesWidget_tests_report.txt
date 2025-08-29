@@ -4,11 +4,11 @@ Si vogliono vedere risultati su SuntimesWidget v0.15.13
 
 test-1:
 	v0.11.0: PASSA
-	v0.15.13: NON PASSA (line 36: tasto 'update' cambiato)
+	v0.15.13: NON PASSA (line 36: tasto 'update' cambiato, ora è una spunta verde)
 
 test-2:
 	v0.11.0: PASSA
-	v0.15.13: NON PASSA (line 44: tasto 'cancel' cambiato)
+	v0.15.13: NON PASSA (line 44: tasto 'cancel' cambiato, ora è una freccia / back button)
 
 test-3:
 	v0.11.0: PASSA
@@ -20,11 +20,11 @@ test-4:
 
 test-5:
 	v0.11.0: PASSA
-	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date')
+	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date', 'cancel' cambiato in freccia / back button)
 
 test-6:
 	v0.11.0: PASSA
-	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date')
+	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date', 'set' cambiato in spunta verde)
 
 test-7:
 	v0.11.0: PASSA
@@ -33,6 +33,26 @@ test-7:
 test-8:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: schermata cambiata)
+
+test-9-new:
+	v0.11.0: PASSA
+	v0.15.13: 
+
+test-10-new:
+	v0.11.0: PASSA
+	v0.15.13: 
+
+test-11-new:
+	v0.11.0: PASSA
+	v0.15.13: 
+
+test-12-new:
+	v0.11.0: PASSA
+	v0.15.13: 
+
+test-13-new:
+	v0.11.0: PASSA
+	v0.15.13: 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

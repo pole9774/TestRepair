@@ -21,20 +21,23 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/action_location_add')[0] # Location
-    el1.click()
+    el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
+    el.click()
     time.sleep(3)
 
-    el2 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_location_mode')[0] # Mode
-    el2.click()
+    el = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Solstice / Equinox")')
+    el.click()
     time.sleep(3)
 
-    el3 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Current (last known)")')
-    el3.click()
+    el = driver.find_element(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/info_time_nextbtn') # Next year
+    el.click()
     time.sleep(3)
 
-    el4 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Update")')
-    el4.click()
+    el = driver.find_element(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/info_time_prevbtn') # Previous year
+    el.click()
+    time.sleep(3)
+
+    driver.back()
 
 finally:
     time.sleep(3)

@@ -29,7 +29,7 @@ try:
     el2.click()
     time.sleep(3)
 
-    el3 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_schedalarm_mode')[0]
+    el3 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_schedalarm_mode')[0] # Schedule an alarm for
     el3.click()
     time.sleep(3)
 

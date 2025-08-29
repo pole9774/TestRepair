@@ -21,11 +21,11 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/action_location_add')[0]
+    el1 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/action_location_add')[0] # Location
     el1.click()
     time.sleep(3)
 
-    el2 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_location_mode')[0]
+    el2 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_location_mode')[0] # Mode
     el2.click()
     time.sleep(3)
 
@@ -33,7 +33,7 @@ try:
     el3.click()
     time.sleep(3)
 
-    el4 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_location_mode')[0]
+    el4 = driver.find_elements(AppiumBy.ID, 'com.forrestguice.suntimeswidget:id/appwidget_location_mode')[0] # Mode
     el4.click()
     time.sleep(3)
 
