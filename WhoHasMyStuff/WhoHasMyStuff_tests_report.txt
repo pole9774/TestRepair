@@ -1,6 +1,10 @@
 Test scritti per WhoHasMyStuff v1.0.24
 Si vogliono vedere risultati su WhoHasMyStuff v1.0.38
 
+
+(I test passano tutti in entrambe le versioni.)
+
+
 test-1:
 	v1.0.24: PASSA
 	v1.0.38: PASSA
