@@ -1,5 +1,5 @@
-Test scritti per DIDA 5.7.0.0
-Si vogliono vedere risultati su DIDA 5.8.8.1
+Test scritti per DIDA v5.7.0.0
+Si vogliono vedere risultati su DIDA v5.8.8.1
 
 (credenziali: aaa...@email.com , aaaaaa)
 
