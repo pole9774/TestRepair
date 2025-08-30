@@ -2,6 +2,9 @@ Test scritti per Easer v0.4.9
 Si vogliono vedere risultati su Easer v0.5.6
 
 
+(Dubbio se usare questa app nel dataset.)
+
+
 test-1:
 	v0.4.9: PASSA
 	v0.5.6: NON PASSA (line 28: 'About' non più accessibile da 'more options')
