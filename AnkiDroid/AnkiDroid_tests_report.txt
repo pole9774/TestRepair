@@ -13,10 +13,12 @@ test-2:
 test-3:
 	v2.6: PASSA
 	v2.13.0: NON PASSA ("cloze deletions" necessario per creare cloze note)
+  repaired: NO (resta lo stesso problema)
 
 test-4-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA (line 38: 'add button' ha ID diverso, line 68: ID diverso, dopo line 78-88-98: serve 'back' dopo click)
+  repaired: 
 
 test-5-new:
   v2.6: PASSA
@@ -29,6 +31,7 @@ test-6-new:
 test-7-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA (line 53: 'ok' button ha ID diverso)
+  repaired: 
 
 
 ---------------------------------------------------------------------------------------------------------------------------
