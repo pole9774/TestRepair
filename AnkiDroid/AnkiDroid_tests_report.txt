@@ -4,7 +4,7 @@ Si vogliono vedere risultati su AnkiDroid v2.13.0
 test-1:
 	v2.6: PASSA
 	v2.13.0: NON PASSA (si blocca la prima volta perché il resource-id del bottone CANCEL è diverso il questa versione)
-  repaired: 
+  repaired: YES
 	
 test-2:
 	v2.6: PASSA
