@@ -4,8 +4,7 @@ Si vogliono vedere risultati su AnkiDroid v2.13.0
 test-1:
 	v2.6: PASSA
 	v2.13.0: NON PASSA (si blocca la prima volta perché il resource-id del bottone CANCEL è diverso il questa versione)
-  repaired: old prompt: YES
-            new prompt: YES
+  repaired: 
 	
 test-2:
 	v2.6: PASSA
@@ -14,12 +13,11 @@ test-2:
 test-3:
 	v2.6: PASSA
 	v2.13.0: NON PASSA ("cloze deletions" necessario per creare cloze note)
-  repaired: NO (resta lo stesso problema)
-            try 2: YES (fornito screenshot dello schermo in cui compare l'errore, e chiesto di riprovare)
+  repaired: 
 
 test-4-new:
   v2.6: PASSA
-	v2.13.0: NON PASSA (line 38: 'add button' ha ID diverso, line 68: ID diverso, dopo line 78-88-98: serve 'back' dopo click)
+	v2.13.0: NON PASSA (line 38: 'add button' ha ID diverso; line 68: ID diverso; dopo line 78-88-98: 'more options' ha più opzioni quando filtered attivo)
   repaired: 
 
 test-5-new:
