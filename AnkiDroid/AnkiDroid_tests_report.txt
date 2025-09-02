@@ -19,7 +19,11 @@ test-3:
 test-4-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA (line 38: 'add button' ha ID diverso; line 68: ID diverso; dopo line 78-88-98: 'more options' ha più opzioni quando filtered attivo)
-  repaired: 
+  repaired: 1st try: NO (fatto notare il problema con _ nel nome dell'APK: risolto nella risposta dopo;
+                        risolto il problema a line 38; 
+                        ha problemi con gli ID nelle liste: ha corretto quello a line 68 ma ha sbagliato l'indice, ha corretto quelli di 'more options' che però erano giusti prima;
+                        non ha risolto i problemi a line 78-88-98)
+            2nd try: NO (provato a far correggere problema ID liste fornendo messaggio errore, ma non ha capito il problema)
 
 test-5-new:
   v2.6: PASSA
