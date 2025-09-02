@@ -10,6 +10,9 @@ test-1:
 test-2:
 	v2.1.3: PASSA
 	v2.5.0: NON PASSA (line 41: 'more options' non presente mentre 'search' è attivo in questa versione)
+          repaired: 1st try: NO (non capisce che mentre search è attivo 'more options' non è a schermo)
+                    2nd try: NO (cerca di premere un tasto back che non c'è)
+                    3rd try: YES (in ogni nuovo try, passati tutti i file precedenti + screenshot rilevanti + nuovo test riparato)
 	
 test-3:
 	v2.1.3: PASSA
