@@ -29,11 +29,10 @@ try:
     driver.find_element("id", 'com.simplemobiletools.applauncher:id/settings_customize_colors_label').click()
     time.sleep(3)
 
-    # The label "Theme" is still correct in v2
     driver.find_element("-android uiautomator", 'new UiSelector().text("Theme")').click()
     time.sleep(3)
 
-    # In v2, the theme is now "Dark" instead of "Dark theme"
+    # Updated: Changed from "Dark theme" to "Dark" to match the v2 theme option
     driver.find_element("-android uiautomator", 'new UiSelector().text("Dark")').click()
     
 finally:

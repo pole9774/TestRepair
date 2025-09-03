@@ -29,13 +29,13 @@ try:
     driver.find_element("id", 'com.simplemobiletools.applauncher:id/settings_customize_colors_label').click()
     time.sleep(3)
 
-    # Updated: select "Light" instead of "Light theme"
+    # Updated text from "Light theme" to "Light"
     driver.find_element("-android uiautomator", 'new UiSelector().text("Light")').click()
     time.sleep(3)
 
-    # Updated: select "Dark" instead of "Dark theme"
+    # Updated text from "Dark theme" to "Dark"
     driver.find_element("-android uiautomator", 'new UiSelector().text("Dark")').click()
-
+    
 finally:
     time.sleep(10)
     driver.quit()
