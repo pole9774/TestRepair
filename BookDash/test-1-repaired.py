@@ -1,0 +1,32 @@
+import time
+from appium.options.android import UiAutomator2Options
+from appium import webdriver
+from appium.webdriver.common.appiumby import AppiumBy
+
+desired_caps = {
+    "platformName": "Android",
+    "deviceName": "emulator-5554",
+    # "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\BookDash\\BookDash v2.8.0.apk",
+    "app": "C:\\Users\\pole9\\Desktop\\Poli\\Tesi\\TestRepair\\BookDash\\BookDash v2.9.2.apk",
+    "appPackage": "org.bookdash.android",
+    "appActivity": "org.bookdash.android.presentation.splash.SplashActivity",
+    "noReset": True,
+    "automationName": "UiAutomator2"
+}
+
+options = UiAutomator2Options()
+for key, value in desired_caps.items():
+    options.set_capability(key, value)
+
+driver = webdriver.Remote("http://localhost:4723", options=options)
+
+time.sleep(5)
+
+try:
+    # Updated to use the new container_language element ID
+    el1 = driver.find_element(AppiumBy.ID, 'org.bookdash.android:id/container_language')
+    el1.click()
+
+finally:
+    time.sleep(3)
+    driver.quit()
