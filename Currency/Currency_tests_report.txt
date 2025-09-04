@@ -4,10 +4,13 @@ Si vogliono vedere risultati su Currency v1.35
 test-1:
 	v1.0: PASSA
 	v1.35: NON PASSA (line 24: in questa versione 'more options' -> 'settings')
+	repaired: YES
 
 test-2:
 	v1.0: PASSA
 	v1.35: NON PASSA (line 24: in questa versione 'more options' -> 'settings'; line 28: indice per 'about' diverso in questa versione)
+	repaired: 1st try: NO (clicca l'About sbagliato)
+			  2nd try: YES (fornito screenshot, riesce a capire qual è l'About corretto)
 
 test-3-new:
 	v1.0: PASSA
