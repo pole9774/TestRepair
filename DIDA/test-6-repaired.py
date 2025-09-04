@@ -20,18 +20,14 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 
 time.sleep(5)
 
-# start from the Template (settings) page, enable template
 try:
-    el1 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Daily record")')
+    el1 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
     el1.click()
     time.sleep(3)
 
-    el2 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
+    # Updated selector to match the new text in v2
+    el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Select")')
     el2.click()
-    time.sleep(3)
-
-    el3 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Delete")')
-    el3.click()
 
 finally:
     time.sleep(5)

@@ -22,16 +22,20 @@ time.sleep(5)
 
 # start from the Template (settings) page, enable template
 try:
+    # Find and click on the "Daily record" template
+    # Using text selector which works in both v1 and v2
     el1 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Daily record")')
     el1.click()
     time.sleep(3)
 
-    el2 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'More options')
+    # In v2, the Delete button is directly available at the bottom of the screen
+    # Using resource-id which is "fa" in v2
+    el2 = driver.find_element(AppiumBy.ID, 'cn.ticktick.task:id/fa')
     el2.click()
-    time.sleep(3)
-
-    el3 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Delete")')
-    el3.click()
+    
+    # Alternative approach using text selector if the resource ID changes frequently
+    # el2 = driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("Delete")')
+    # el2.click()
 
 finally:
     time.sleep(5)

@@ -1,7 +1,7 @@
 Test scritti per DIDA v5.7.0.0
 Si vogliono vedere risultati su DIDA v5.8.8.1
 
-(credenziali: aaa...@email.com , aaaaaa)
+(credenziali: aaaa@email.com , aaaaaa)
 
 test-1:
 	v5.7.0.0: PASSA
@@ -29,10 +29,12 @@ test-4:
 test-5:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (line 30: 'more options' è scomparso, 'delete' è diventato un bottone in basso)
+	repaired: YES
 
 test-6:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (line 28: 'edit multiple tasks' è diventato 'Select' in questa versione)
+	repaired: YES
 
 test-7:
 	v5.7.0.0: PASSA (line 36: modifica rispetto a test originale, per fare passare il test)
