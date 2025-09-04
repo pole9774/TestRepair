@@ -39,6 +39,7 @@ test-6:
 test-7:
 	v5.7.0.0: PASSA (line 36: modifica rispetto a test originale, per fare passare il test)
 	v5.8.8.1: NON PASSA (problema a line 24: clicca il fab e non il tasto 'open side bar'; line 28: settings button ha 'id' diverso; line 32: elemento non trovato, usare freccia dx per raggiungere la pagina voluta; line 36: elemento diverso in questa versione)
+	repaired: NO (2 tries, non riesce a risolvere problema sidebar + navigazione sbagliata)
 
 test-8:
 	v5.7.0.0: PASSA

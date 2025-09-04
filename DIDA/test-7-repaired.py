@@ -21,19 +21,23 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(5)
 
 try:
-    el1 = driver.find_elements(AppiumBy.CLASS_NAME, 'android.widget.ImageButton')[0] # open side bar
+    # Step 1: Open side bar - This element hasn't changed
+    el1 = driver.find_elements(AppiumBy.CLASS_NAME, 'android.widget.ImageButton')[0]
     el1.click()
     time.sleep(3)
 
-    el2 = driver.find_elements(AppiumBy.ID, 'cn.ticktick.task:id/settings_btn')[0]
+    # Step 2: Click settings button - ID has changed from 'settings_btn' to 'amc'
+    el2 = driver.find_elements(AppiumBy.ID, 'cn.ticktick.task:id/amc')[0]
     el2.click()
     time.sleep(3)
 
-    el3 = driver.find_elements(AppiumBy.ID, 'cn.ticktick.task:id/level_icon')[0]
+    # Step 3: Click level icon - Structure has changed, now using the clickable RelativeLayout 
+    el3 = driver.find_elements(AppiumBy.ID, 'cn.ticktick.task:id/aa1')[0]
     el3.click()
     time.sleep(3)
 
-    el4 = driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.Image")[0] # My Achievement Score
+    # Step 4: Click 'My Achievement Score' - Using accessibility ID instead of class name
+    el4 = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'My Achievement Score')
     el4.click()
 
 finally:
