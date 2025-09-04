@@ -6,10 +6,14 @@ Si vogliono vedere risultati su DIDA v5.8.8.1
 test-1:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; line 32: elemento diverso in questa versione)
+	repaired: 1st try: NO (resta il problema dell'apertura sidebar)
+			  2nd try: YES (fatto notare il problema della sidebar, lo risolve ma usa bounds per identificare il tasto, non capendo che deve usare l'indice 1 invece che 0; penso che il problema principale sia la mancanza di locators solidi per i widget)
 
 test-2:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Daily Alert' cambiato in 'Daily Notification')
+	repaired: 1st try: NO (solito problema sidebar)
+			  2nd try: YES (risolto problema sidebar, questa volta riesce ad usare l'indice corretto)
 
 test-3:
 	v5.7.0.0: PASSA
