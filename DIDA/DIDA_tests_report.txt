@@ -44,6 +44,7 @@ test-7:
 test-8:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Follow WeChat Official Account' cambiato in 'Add Tasks in Wechat')
+	repaired: YES (ha deciso di dare 2 versioni: la prima fallisce per il solito problema all'indice della sidebar, la seconda è più robusta e future-proof, e funziona)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
