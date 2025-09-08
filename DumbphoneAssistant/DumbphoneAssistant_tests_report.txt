@@ -5,10 +5,12 @@ Si vogliono vedere risultati su DumbphoneAssistant v0.5
 test-1:
 	v0.4: PASSA
 	v0.5: NON PASSA (line 24: 'Sim Card' è diventato 'Sim Card (0)', o in generale penso 'Sim Card (N)')
+  repaired: YES
 
 test-2-new:
 	v0.4: PASSA
 	v0.5: NON PASSA (line 24: 'Sim Card' è diventato 'Sim Card (0)'; line 32: 'Phone' è diventato 'Phone (0)')
+  repaired: YES
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
