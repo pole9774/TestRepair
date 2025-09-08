@@ -1,9 +1,14 @@
 Test scritti per openBikeSharing v1.0
 Si vogliono vedere risultati su openBikeSharing v1.10.0
 
+
+(Seleziona 'Alba' come network)
+
+
 test-1:
 	v1.0: PASSA
 	v1.10.0: NON PASSA (line 29: 'refresh' spostato in 'more options')
+  repaired: YES
 
 test-2:
 	v1.0: PASSA
