@@ -5,6 +5,7 @@ Si vogliono vedere risultati su Fwknop v1.2.3
 test-1:
 	v1.0.0: PASSA
 	v1.2.3: NON PASSA (line 28: 'New config' invece che 'New Config', la 'c' è minuscola in questa versione)
+  repaired: YES
 
 test-2-new:
 	v1.0.0: PASSA
