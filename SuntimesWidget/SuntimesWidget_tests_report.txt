@@ -35,12 +35,12 @@ test-6:
 test-7:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: schermata cambiata)
-	repaired: 
+	repaired: 4th try: YES (problemi con tabs time/event e con cancel button sparito. Risolti al quarto tentativo)
 
 test-8:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: schermata cambiata)
-	repaired: 
+	repaired: 2nd try: YES (problemi con tabs time/event, risolti al secondo tentativo)
 
 test-9-new:
 	v0.11.0: PASSA
