@@ -20,9 +20,10 @@ driver = webdriver.Remote("http://localhost:4723", options=options)
 time.sleep(10)
 
 try:
-    # Updated: Click the FAB for search (v2)
+    # In v2, the search functionality appears to have been moved to a floating action button
+    # Using resource-id instead of accessibility ID to find the element
     driver.find_element("id", "com.a5corp.weather:id/fab").click()
-
+    
 finally:
     time.sleep(5)
     driver.quit()
