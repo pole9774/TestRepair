@@ -145,7 +145,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (content-desc follow/unfollow button diverse)
 	
-	- Repaired: YES
+	- Repaired: 
 	
 	
 21. whenStateIsSuccess_allDefaultSettingsAreDisplayed
@@ -189,7 +189,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (xpath della view dei dettagli topic da scrollare è diverso)
 	
-	- Repaired: PARTIALLY (non capisce che deve tornare in alto per premere 'back', ma il resto è riparato)
+	- Repaired: 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
