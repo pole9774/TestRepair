@@ -58,12 +58,12 @@ test-11-new:
 test-12-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: 'next' ha ID diverso; 'previous' ha id diverso)
-	repaired: 
+	repaired: 2nd try: NO (al primo tentativo problema back. Fatto notare ma non è stato risolto al secondo tentativo)
 
 test-13-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: tasto per selezionare 'map types' ha id diverso; i 'map types' sono di più leggermente diversi; tasti radiali sostituiti da opzioni in map_menu -> options)
-	repaired: 
+	repaired: 2nd try: NO (al primo tentativo non capisce che dopo aver selezionato una checkbox esce dalle opzioni. Al secondo tentativo non lo capisce, nonostante gli sia fornito uno screenshot successivo alla selezione)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
