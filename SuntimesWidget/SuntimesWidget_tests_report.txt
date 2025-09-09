@@ -20,26 +20,32 @@ test-3:
 test-4:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: 'language settings' cambiato in 'language')
+	repaired: YES
 
 test-5:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date', 'cancel' cambiato in freccia / back button)
+	repaired: YES
 
 test-6:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 28: 'set date' cambiato in 'view date', 'set' cambiato in spunta verde)
+	repaired: YES
 
 test-7:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: schermata cambiata)
+	repaired: 
 
 test-8:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: schermata cambiata)
+	repaired: 
 
 test-9-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: 'cancel' diverso; 'set' diverso)
+	repaired: 
 
 test-10-new:
 	v0.11.0: PASSA
@@ -52,10 +58,12 @@ test-11-new:
 test-12-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: 'next' ha ID diverso; 'previous' ha id diverso)
+	repaired: 
 
 test-13-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA (line 32: tasto per selezionare 'map types' ha id diverso; i 'map types' sono di più leggermente diversi; tasti radiali sostituiti da opzioni in map_menu -> options)
+	repaired: 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
