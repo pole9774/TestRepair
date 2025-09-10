@@ -145,7 +145,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (content-desc follow/unfollow button diverse)
 	
-	- Repaired: 
+	- Repaired: YES
 	
 	
 21. whenStateIsSuccess_allDefaultSettingsAreDisplayed
