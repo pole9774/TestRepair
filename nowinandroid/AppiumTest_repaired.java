@@ -188,6 +188,50 @@ public class AppiumTest {
         }
     }
 
+    @Test
+    public void news_whenSuccessAndTopicIsSuccess_isShown() {
+        int maxSwipes = 10;
+        int swipes = 0;
+
+        try {
+            // Go to 'Interests' tab
+            WebElement interests_tab = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Interests\"]"));
+            interests_tab.click();
+
+            // Click topic 'Accessibility'
+            WebElement topic = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Accessibility\"]"));
+            topic.click();
+
+            // Swipe vertically until the first news title is found
+            // Updated container XPath for v2 - using the scrollable container in the topic detail view
+            String containerXPath = "//android.view.View[@resource-id='topic:14']/android.view.View";
+            while (driver.findElements(AppiumBy.xpath("//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices 💬\"]")).isEmpty() && swipes < maxSwipes) {
+                swipeUp(containerXPath);
+                swipes++;
+            }
+
+            WebElement news_title = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Listen to our major Text to Speech upgrades for 64 bit devices 💬\"]"));
+            Assert.assertTrue(news_title.isDisplayed(), "Title is not displayed!");
+
+            // Swipe to the back button and click it
+            swipes = 0;
+            while (driver.findElements(AppiumBy.xpath("//android.view.View[@content-desc=\"Back\"]")).isEmpty() && swipes < maxSwipes) {
+                swipeDown(containerXPath);
+                swipes++;
+            }
+            WebElement back_button = driver.findElement(AppiumBy.xpath("//android.view.View[@content-desc=\"Back\"]"));
+            back_button.click();
+
+            // Go to 'For you' tab
+            WebElement for_you_tab = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"For you\"]"));
+            for_you_tab.click();
+        } catch (NoSuchElementException e) {
+            Assert.fail("Element not found: " + e.getMessage());
+        } catch (Exception e) {
+            Assert.fail("Unexpected error: " + e.getMessage());
+        }
+    }
+
     @AfterClass
     public void teardown() {
         if (driver != null) {

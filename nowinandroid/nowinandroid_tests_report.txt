@@ -189,7 +189,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (xpath della view dei dettagli topic da scrollare è diverso)
 	
-	- Repaired: 
+	- Repaired: YES
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
