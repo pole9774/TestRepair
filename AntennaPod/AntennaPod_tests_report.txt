@@ -6,6 +6,7 @@ test-1:
 	v2.5.0: NON PASSA (line 37: 'lock queue' spostato in 'more options' in questa versione; 'search' spostato fuori da 'more options')
 	repaired: 1st try: NO (problema di indici quando 'keep sorted' è checked)
             2nd try: YES (mandato messaggio di errore + xml schermo interessato, che non era incluso nei file mandati inizialmente)
+  healenium: NO
 
 test-2:
 	v2.1.3: PASSA
@@ -13,11 +14,13 @@ test-2:
   repaired: 1st try: NO (non capisce che mentre search è attivo 'more options' non è a schermo)
             2nd try: NO (cerca di premere un tasto back che non c'è)
             3rd try: YES (in ogni nuovo try, passati tutti i file precedenti + screenshot rilevanti + nuovo test riparato)
+  healenium: NO
 	
 test-3:
 	v2.1.3: PASSA
 	v2.5.0: NON PASSA (line 41: 'Running' non presente in questa versione, penso che compaia solo mentre si sta eseguendo un download)
 	repaired: YES
+  healenium: NO
 
 test-4:
 	v2.1.3: PASSA
