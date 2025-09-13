@@ -11,14 +11,16 @@ desired_caps = {
     "appPackage": "org.bookdash.android",
     "appActivity": "org.bookdash.android.presentation.splash.SplashActivity",
     "noReset": True,
-    "automationName": "UiAutomator2"
+    "automationName": "UiAutomator2",
+    "healenium:session": True,
+    "sessionKey": "BookDash_test-1"
 }
 
 options = UiAutomator2Options()
 for key, value in desired_caps.items():
     options.set_capability(key, value)
 
-driver = webdriver.Remote("http://localhost:4723", options=options)
+driver = webdriver.Remote("http://127.0.0.1:8085", options=options)
 
 time.sleep(5)
 
