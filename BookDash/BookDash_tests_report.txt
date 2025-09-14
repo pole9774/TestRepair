@@ -5,7 +5,6 @@ test-1:
 	v2.8.0: PASSA
 	v2.9.2: NON PASSA (line 26: 'id' bottone diverso)
   repaired: YES
-  healenium: NO
 
 test-2-new:
 	v2.8.0: PASSA
