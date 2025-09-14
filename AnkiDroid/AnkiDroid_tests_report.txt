@@ -5,6 +5,7 @@ test-1:
 	v2.6: PASSA
 	v2.13.0: NON PASSA (si blocca la prima volta perché il resource-id del bottone CANCEL è diverso il questa versione)
   repaired: YES
+  healenium: YES
 	
 test-2:
 	v2.6: PASSA
@@ -15,11 +16,13 @@ test-3:
 	v2.13.0: NON PASSA ("cloze deletions" necessario per creare cloze note)
   repaired: 1st try: NO (stesso problema)
             2nd try: YES (fornito screenshot in aggiunta agli altri file)
+  healenium: NO
 
 test-4-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA (line 38: 'add button' ha ID diverso; line 68: ID diverso; dopo line 78-88-98: 'more options' ha più opzioni quando filtered attivo)
   repaired: NO (ha problemi con questo test, forse il numero di file xml forniti [12*2] è troppo grande?)
+  healenium: NO
 
 test-5-new:
   v2.6: PASSA
@@ -33,6 +36,7 @@ test-7-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA (line 53: 'ok' button ha ID diverso)
   repaired: YES
+  healenium: YES 
 
 
 ---------------------------------------------------------------------------------------------------------------------------
