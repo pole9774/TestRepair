@@ -13,11 +13,13 @@ test-3:
 	v2.0.0: PASSA
 	v3.1.1: NON PASSA ('Light' e 'Dark' al posto di 'Light theme' e 'Dark theme')
 	repaired: YES
+	healenium: YES
 
 test-4:
 	v2.0.0: PASSA
 	v3.1.1: NON PASSA ('Dark' al posto di 'Dark theme')
 	repaired: YES
+	healenium: YES
 
 test-5-new:
 	v2.0.0: PASSA
