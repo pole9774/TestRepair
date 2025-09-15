@@ -8,44 +8,52 @@ test-1:
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; line 32: elemento diverso in questa versione)
 	repaired: 1st try: NO (resta il problema dell'apertura sidebar)
 			  2nd try: YES (fatto notare il problema della sidebar, lo risolve ma usa bounds per identificare il tasto, non capendo che deve usare l'indice 1 invece che 0; penso che il problema principale sia la mancanza di locators solidi per i widget)
+	healenium: NO 
 
 test-2:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Daily Alert' cambiato in 'Daily Notification')
 	repaired: 1st try: NO (solito problema sidebar)
 			  2nd try: YES (risolto problema sidebar, questa volta riesce ad usare l'indice corretto)
+	healenium: NO
 
 test-3:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Template' cambiato in 'Manage Template')
 	repaired: 1st try: NO (solito problema side bar)
 			  2nd try: YES (risolto problema sidebar)
+	healenium: NO
 
 test-4:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (line 30: 'more options' è scomparso, 're-name' è diventato un bottone in basso)
 	repaired: YES
+	healenium: NO
 
 test-5:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (line 30: 'more options' è scomparso, 'delete' è diventato un bottone in basso)
 	repaired: YES
+	healenium: NO
 
 test-6:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (line 28: 'edit multiple tasks' è diventato 'Select' in questa versione)
 	repaired: YES
+	healenium: NO
 
 test-7:
 	v5.7.0.0: PASSA (line 36: modifica rispetto a test originale, per fare passare il test)
 	v5.8.8.1: NON PASSA (problema a line 24: clicca il fab e non il tasto 'open side bar'; line 28: settings button ha 'id' diverso; line 32: elemento non trovato, usare freccia dx per raggiungere la pagina voluta; line 36: elemento diverso in questa versione)
 	repaired: NO (2 tries, non riesce a risolvere problema sidebar + navigazione sbagliata)
+	healenium: NO
 
 test-8:
 	v5.7.0.0: PASSA
 	v5.8.8.1: NON PASSA (fallisce a line 28; problema a line 24: clicca il fab e non il tasto 'open side bar'; settings button ha 'id' diverso; 'Follow WeChat Official Account' cambiato in 'Add Tasks in Wechat')
 	repaired: YES (ha deciso di dare 2 versioni: la prima fallisce per il solito problema all'indice della sidebar, la seconda è più robusta e future-proof, e funziona)
-
+	healenium: NO
+	
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
