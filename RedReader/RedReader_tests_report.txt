@@ -6,11 +6,13 @@ test-1:
 	v1.14.0: PASSA
 	v1.23.1: NON PASSA (fallisce a line 28, problema a line 24: 'Custom Location' è il simbolo a dx di 'Find Location' in questa versione)
   repaired: YES
+  healenium: NO 
 
 test-2:
 	v1.14.0: PASSA
 	v1.23.1: NON PASSA (fallisce a line 28, problema a line 24: 'Custom Location' è il simbolo a dx di 'Find Location' in questa versione)
   repaired: YES
+  healenium: NO 
 
 test-3-new:
   v1.14.0: PASSA
@@ -25,6 +27,7 @@ test-5-new:
   v1.23.1: NON PASSA (line 81: About ha indice 9 in questa versione, ci sono Accessibility e Backup/Restore agli indici 7 e 8)
   repaired: 1st try: NO (problema indici in Settings screen)
             2nd try: YES (problema indici risolto con locators più specifici)
+  healenium: NO 
 
 test-6-new:
   v1.14.0: PASSA
