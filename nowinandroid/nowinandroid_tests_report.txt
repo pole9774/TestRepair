@@ -10,6 +10,8 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- Repaired: YES
 
+	- Healenium: YES 
+
 
 2. navigationBar_navigateToPreviouslySelectedTab_restoresContent
 
@@ -137,6 +139,8 @@ Si vogliono vedere i risultati sulla versione più recente.
 	- New: NON PASSA (content-desc unfollow button diversa)
 	
 	- Repaired: YES
+
+	- Healenium: NO 
 	
 	
 20. interestsWithTopics_whenTopicsFollowed_showFollowedAndUnfollowedTopicsWithInfo
@@ -146,6 +150,8 @@ Si vogliono vedere i risultati sulla versione più recente.
 	- New: NON PASSA (content-desc follow/unfollow button diverse)
 	
 	- Repaired: YES
+
+	- Healenium: YES
 	
 	
 21. whenStateIsSuccess_allDefaultSettingsAreDisplayed
@@ -190,6 +196,8 @@ Si vogliono vedere i risultati sulla versione più recente.
 	- New: NON PASSA (xpath della view dei dettagli topic da scrollare è diverso)
 	
 	- Repaired: YES
+
+	- Healenium: YES 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
