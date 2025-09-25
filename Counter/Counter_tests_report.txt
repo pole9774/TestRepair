@@ -3,7 +3,8 @@ Si vogliono vedere risultati su Counter v18
 
 test-1:
 	v13: PASSA
-	v18: NON PASSA (line 24: 'id' tasto sidebar diverso)
+	v18: NON PASSA
+       line 24: tasto sidebar: prima identificato da resource-id 'android:id/up', ora non ha più un resource-id
   repaired: YES
   healenium: NO
 
@@ -13,8 +14,9 @@ test-2:
 
 test-3-new:
   v13: PASSA
-  v18: NON PASSA (funzionalità eliminata in questa versione)
-  repaired: - (funzionalità eliminata)
+  v18: NON PASSA
+       funzionalità eliminata in questa versione
+  repaired: NO (funzionalità eliminata)
   healenium: NO
 
 test-4-new:

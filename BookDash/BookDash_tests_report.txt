@@ -3,7 +3,8 @@ Si vogliono vedere risultati su BookDash v2.9.2
 
 test-1:
 	v2.8.0: PASSA
-	v2.9.2: NON PASSA (line 26: 'id' bottone diverso)
+	v2.9.2: NON PASSA
+          line 26: resource-id cambiato da 'org.bookdash.android:id/action_language_choice' a 'org.bookdash.android:id/container_language'
   repaired: YES
   healenium: NO
 
