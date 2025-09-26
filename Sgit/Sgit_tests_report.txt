@@ -4,13 +4,15 @@ Si vogliono vedere risultati su Sgit v1.3.2
 
 test-1:
 	v1.3.0: PASSA
-	v1.3.2: NON PASSA (line 28: per 'Private Keys' il nuovo percorso è 'More options' -> 'Settings' -> 'SSH Keys')
+	v1.3.2: NON PASSA
+          line 28: 'Private Keys': rinominato in 'SSH Keys', con nuovo percorso 'More options' -> 'Settings' -> 'SSH Keys'
   repaired: YES
   healenium: NO 
 
 test-2-new:
 	v1.3.0: PASSA
-	v1.3.2: NON PASSA (line 28: Git Profile gestito in 'More options' -> 'Settings')
+	v1.3.2: NON PASSA
+          line 28: nella nuova versione gli attributi di Git Profile gestiti in 'More options' -> 'Settings'
   repaired: 1st try: NO (sbagliato id back button)
             2nd try: YES (risolto problema id back button)
   healenium: NO 

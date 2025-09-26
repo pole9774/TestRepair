@@ -4,7 +4,8 @@ Si vogliono vedere risultati su SoundRecorder v1.3.0
 
 test-1:
 	v1.2.5: PASSA
-	v1.3.0: NON PASSA (in questa versione dovrebbe essere Settings -> About, dove About sostituisce Licences)
+	v1.3.0: NON PASSA
+			line 28: 'Licenses': diventato 'About' nella nuova versione, nuovo percorso Settings -> About
 	repaired: YES
 	healenium: NO 
 
