@@ -6,7 +6,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 
 	- v0.0.5: PASSA
 	
-	- New: NON PASSA (view che contiene For you è diversa)
+	- New: NON PASSA (xpath della view che contiene For you è diverso)
 	
 	- Repaired: YES
 
