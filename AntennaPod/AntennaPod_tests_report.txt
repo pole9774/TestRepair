@@ -7,7 +7,7 @@ test-1:
           line 37: lock queue: spostato dentro 'more options' con nuovo resource-id
           line 61: search: spostato fuori da 'more options' con nuovo resource-id
           line 80: opzione 'sort' in 'more options': ha indice [0] anzichè [1]
-          line 286: opzione 'clear queue' in 'more options': ha indice [1] anzichè [2]
+          line 276: opzione 'clear queue' in 'more options': ha indice [1] anzichè [2]
           line 300: opzione 'multi select' in 'more options': non presente
   repaired: 1st try: NO (problema di indici quando 'keep sorted' è checked)
             2nd try: YES (mandato messaggio di errore + xml schermo interessato, che non era incluso nei file mandati inizialmente)
