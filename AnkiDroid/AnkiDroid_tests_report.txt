@@ -7,6 +7,7 @@ test-1:
            line 36: cancel button: resource-id cambiato da 'com.ichi2.anki:id/buttonDefaultNegative' a 'com.ichi2.anki:id/md_buttonDefaultNegative'
            line 54: ok button: resource-id cambiato da 'com.ichi2.anki:id/buttonDefaultPositive' a 'com.ichi2.anki:id/md_buttonDefaultPositive'
   repaired: YES
+            Entrambi i resource-id aggiornati correttamente.
   healenium: YES
 	
 test-2:
@@ -17,17 +18,21 @@ test-3:
 	v2.6: PASSA
 	v2.13.0: NON PASSA
            funzionalità 'create cloze note' ha un nuovo step: aggiungere 'cloze deletions'
-  repaired: 1st try: NO (stesso problema)
-            2nd try: YES (fornito screenshot della schermata che mostra il problema in aggiunta agli altri file)
+  repaired: 1st try: NO
+            2nd try: YES
+            Alla prima interazione il problema persiste, perché l'LLM non può discernere la presenza di un nuovo step dalle schermate .xml.
+            Alla seconda interazione viene fornito lo screenshot dello schermo che mostra il problema, che permette all'LLM di capirlo e risolverlo.
   healenium: NO
 
 test-4-new:
   v2.6: PASSA
 	v2.13.0: NON PASSA
            line 38: add note button: resource-id cambiato da 'com.ichi2.anki:id/action_add_card_from_card_browser' a 'com.ichi2.anki:id/action_add_note_from_card_browser'
-           line 68: opzione 'no sorting (faster): resource-id cambiato da 'com.ichi2.anki:id/title'[1] a 'com.ichi2.anki:id/md_title'[1]; in generale le opzioni in 'more options' cambiano resource-id da 'com.ichi2.anki:id/title'[*] a 'com.ichi2.anki:id/md_title'[*]
+           line 68: opzione 'no sorting (faster)': resource-id cambiato da 'com.ichi2.anki:id/title'[1] a 'com.ichi2.anki:id/md_title'[1]; in generale le opzioni in 'more options' cambiano resource-id da 'com.ichi2.anki:id/title'[*] a 'com.ichi2.anki:id/md_title'[*]
            quando 'Filter marked'/'Filter suspended' attivo, 'more options' ha più opzioni, causando problemi di indici
-  repaired: NO (ha problemi con questo test, forse il numero di file xml forniti [12*2] è troppo grande?)
+  repaired: NO
+            Repair fallito. In multiple interazioni non riesce a correggere il test per tutti i cambiamenti.
+            Probabilmente fallimento dovuto al gran numero di cambiamenti e alle tante schermate interessate.
   healenium: NO
 
 test-5-new:
@@ -44,6 +49,7 @@ test-7-new:
            line 53: ok button: resource-id cambiato da 'com.ichi2.anki:id/buttonDefaultPositive' a 'com.ichi2.anki:id/md_buttonDefaultPositive'
            line 68: ok button: resource-id cambiato da 'com.ichi2.anki:id/buttonDefaultPositive' a 'com.ichi2.anki:id/md_buttonDefaultPositive'
   repaired: YES
+            Entrambi i resource-id aggiornati correttamente.
   healenium: YES 
 
 
