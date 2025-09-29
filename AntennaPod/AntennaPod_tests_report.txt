@@ -9,8 +9,10 @@ test-1:
           line 80: opzione 'sort' in 'more options': ha indice [0] anzichè [1]
           line 276: opzione 'clear queue' in 'more options': ha indice [1] anzichè [2]
           line 300: opzione 'multi select' in 'more options': non presente
-  repaired: 1st try: NO (problema di indici quando 'keep sorted' è checked)
-            2nd try: YES (mandato messaggio di errore + xml schermo interessato, che non era incluso nei file mandati inizialmente)
+  repaired: 1st try: NO
+            2nd try: YES
+            Alla prima interazione fallisce il repair per un problema di indici resource-id quando l'opzione 'keep sorted' è checked; lo schermo .xml con gli indici cambiati non era stato fornito alla prima interazione.
+            Alla seconda interazione successo: viene fornito all'LLM il messaggio d'errore dell'esecuzione del test della prima interazione, insieme allo schermo .xml con gli indici cambiati.
   healenium: NO 
 
 test-2:
@@ -19,9 +21,12 @@ test-2:
           line 41: 'more options': non presente mentre search è attivo
           line 45: refresh: presente solo fuori da 'more options'
           line 53: remove all new flags: indice cambiato da [1] a [0]
-  repaired: 1st try: NO (non capisce che mentre search è attivo 'more options' non è a schermo)
-            2nd try: NO (cerca di premere un tasto back che non c'è)
-            3rd try: YES (in ogni nuovo try, passati tutti i file precedenti + screenshot rilevanti + nuovo test riparato)
+  repaired: 1st try: NO
+            2nd try: NO
+            3rd try: YES
+            Alla prima interazione fallisce perché non riesce a capire che il tasto 'more options' non è a schermo mentre 'search' è attivo.
+            Alla seconda interazione risolve il problema precedente, ma fallisce perché cerca di premere un tasto 'back' che preme già prima.
+            Alla terza interazione ha successo, ad ogni interazione passati screenshot rilevanti.
   healenium: NO
 	
 test-3:
@@ -29,6 +34,7 @@ test-3:
 	v2.5.0: NON PASSA
           line 41: 'Running': non presente
 	repaired: YES
+            Si accorge che running non c'è più e salta l'azione di premerlo.
   healenium: NO
 
 test-4:
