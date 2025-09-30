@@ -8,7 +8,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (xpath della view che contiene For you è diverso)
 	
-	- Repaired: YES
+	- Repaired: YES (Locator aggiornato correttamente al primo tentativo.)
 
 	- Healenium: YES 
 
@@ -138,7 +138,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (content-desc unfollow button diversa)
 	
-	- Repaired: YES
+	- Repaired: YES (Locator aggiornato correttamente al primo tentativo.)
 
 	- Healenium: NO 
 	
@@ -149,7 +149,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (content-desc follow/unfollow button diverse)
 	
-	- Repaired: YES
+	- Repaired: YES (Locator aggiornato correttamente al primo tentativo.)
 
 	- Healenium: YES
 	
@@ -195,7 +195,7 @@ Si vogliono vedere i risultati sulla versione più recente.
 	
 	- New: NON PASSA (xpath della view dei dettagli topic da scrollare è diverso)
 	
-	- Repaired: YES
+	- Repaired: YES (Locator aggiornato correttamente al primo tentativo.)
 
 	- Healenium: YES 
 

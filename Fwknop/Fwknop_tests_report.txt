@@ -7,6 +7,7 @@ test-1:
 	v1.2.3: NON PASSA
           line 28: text "New Config" cambiato in "New config"
   repaired: YES
+            Text aggiornato correttamente al primo tentativo.
   healenium: YES
 
 test-2-new:
