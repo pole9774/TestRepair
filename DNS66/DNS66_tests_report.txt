@@ -6,6 +6,7 @@ test-1:
 	v0.6.8: NON PASSA
           line 33: restore: eliminato nella nuova versione
   repaired: YES
+            Al primo tentativo, scrive codice che evita di cliccare 'restore' se non c'è.
   healenium: NO 
 
 test-2:
@@ -19,6 +20,7 @@ test-3:
           line 41: indice elemento cercato cambia da [0] a [1]
           line 57: FAB: resource-id cambiato da 'org.jak_linux.dns66:id/host_add' a 'org.jak_linux.dns66:id/floating_action_button'
   repaired: YES
+            Al primo tentativo, corregge correttamente tutti i locator.
   healenium: NO 
 
 test-4:
@@ -26,6 +28,7 @@ test-4:
 	v0.6.8: NON PASSA
           line 29: apps: resource-id non presente nella nuova versione
   repaired: YES
+            Al primo tentativo, corregge correttamente tutti i locator.
   healenium: NO 
 
 test-5:
@@ -34,6 +37,7 @@ test-5:
           line 29: DNS servers: resource-id non presente nella nuova versione
           line 41: FAB: resource-id cambiato da 'org.jak_linux.dns66:id/dns_add' a 'org.jak_linux.dns66:id/floating_action_button'
   repaired: YES
+            Al primo tentativo, corregge correttamente tutti i locator.
   healenium: NO 
 
 test-6-new:
@@ -42,6 +46,7 @@ test-6-new:
           'Show Notification': indice cambiato da [3] a [4]
           'About': indice cambiato da [4] a [5]
   repaired: YES
+            Al primo tentativo, corregge correttamente tutti i locator.
   healenium: NO 
 
 
