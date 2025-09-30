@@ -6,6 +6,7 @@ test-1:
 	v2.9.2: NON PASSA
           line 26: resource-id cambiato da 'org.bookdash.android:id/action_language_choice' a 'org.bookdash.android:id/container_language'
   repaired: YES
+            resource-id aggiornato correttamente al primo tentativo.
   healenium: NO
 
 test-2-new:

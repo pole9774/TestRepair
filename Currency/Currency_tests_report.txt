@@ -6,6 +6,7 @@ test-1:
 	v1.35: NON PASSA 
 		   line 24: settings: spostato in 'more options'
 	repaired: YES
+			  Al primo tentativo si accorge del cambiamento e corregge correttamente
 	healenium: NO 
 
 test-2:
@@ -13,8 +14,10 @@ test-2:
 	v1.35: NON PASSA
 		   line 24: settings: spostato in 'more options'
 		   line 28: 'About': indice cambiato da [10] a [16]
-	repaired: 1st try: NO (clicca l'About sbagliato)
-			  2nd try: YES (fornito screenshot, riesce a capire qual è l'About corretto)
+	repaired: 1st try: NO
+			  2nd try: YES
+			  Al primo tentativo corregge per il nuovo posizionamento di 'settings', ma sbaglia cliccando l''About' titolo invece che l''About' tasto.
+			  Al secondo tentativo clicca l''About' corretto, grazie a uno screenshot fornito.
 	healenium: NO 
 
 test-3-new:

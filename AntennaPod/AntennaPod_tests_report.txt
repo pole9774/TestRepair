@@ -34,7 +34,7 @@ test-3:
 	v2.5.0: NON PASSA
           line 41: 'Running': non presente
 	repaired: YES
-            Si accorge che running non c'è più e salta l'azione di premerlo.
+            Si accorge che 'Running' non c'è più e salta l'azione di premerlo.
   healenium: NO
 
 test-4:

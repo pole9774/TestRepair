@@ -15,6 +15,7 @@ test-3:
 			line 32: text cambiato da "Light theme" a "Light"
 			line 35: text cambiato da "Dark theme" a "Dark"
 	repaired: YES
+			  Text aggiornati correttamente al primo tentativo.
 	healenium: YES
 
 test-4:
@@ -22,6 +23,7 @@ test-4:
 	v3.1.1: NON PASSA
 			line 35: text cambiato da "Dark theme" a "Dark"
 	repaired: YES
+			  Text aggiornato correttamente al primo tentativo.
 	healenium: YES
 
 test-5-new:

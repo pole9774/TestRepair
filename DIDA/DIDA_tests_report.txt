@@ -9,8 +9,10 @@ test-1:
 			  line 24: tasto sidebar: indice cambiato da [0] a [1]
 			  line 28: profile picture: resource-id cambiato da 'cn.ticktick.task:id/photo'[0] a 'cn.ticktick.task:id/adf'
 			  line 32: 'My Achievement Score': impossibile trovare elemento con vecchio locator class name android.widget.Image[0]
-	repaired: 1st try: NO (resta il problema dell'apertura sidebar)
-			  2nd try: YES (fatto notare il problema della sidebar, lo risolve ma usa bounds per identificare il tasto, non capendo che deve usare l'indice 1 invece che 0; penso che il problema principale sia la mancanza di locators solidi per i widget)
+	repaired: 1st try: NO
+			  2nd try: YES
+			  Al primo tentativo risolve 'profile picture' e 'my achievement score', ma rimane il problema della sidebar.
+			  Al secondo tentativo gli si fa notare il problema, lo risolve ma usando bounds per trovare l'elemento; c'è un problema di mancanza di locator solido per il tasto sidebar.
 	healenium: NO 
 
 test-2:
@@ -19,8 +21,10 @@ test-2:
 			  line 24: tasto sidebar: indice cambiato da [0] a [1]
 			  line 28: settings: resource-id cambiato da 'cn.ticktick.task:id/settings_btn' a 'cn.ticktick.task:id/amc'
 			  line 36: text "Daily Alert" cambiato in "Daily Notification"
-	repaired: 1st try: NO (solito problema sidebar)
-			  2nd try: YES (risolto problema sidebar, questa volta riesce ad usare l'indice corretto)
+	repaired: 1st try: NO
+			  2nd try: YES
+			  Al primo tentativo rimane il problema del tasto sidebar.
+			  Al secondo tentativo risolve il problema sidebar, questa volta usando xpath '//android.view.ViewGroup[@resource-id="cn.ticktick.task:id/auw"]/android.widget.ImageButton[1]'.
 	healenium: NO
 
 test-3:
@@ -29,8 +33,10 @@ test-3:
 			  line 24: tasto sidebar: indice cambiato da [0] a [1]
 			  line 28: settings: resource-id cambiato da 'cn.ticktick.task:id/settings_btn' a 'cn.ticktick.task:id/amc'
 			  line 36: text "Template" cambiato in "Manage Template"
-	repaired: 1st try: NO (solito problema side bar)
-			  2nd try: YES (risolto problema sidebar)
+	repaired: 1st try: NO
+			  2nd try: YES
+			  Al primo tentativo rimane il problema del tasto sidebar.
+			  Al secondo tentativo risolve il problema sidebar, questa volta usando xpath '//android.view.ViewGroup[@resource-id="cn.ticktick.task:id/auw"]/android.widget.ImageButton'
 	healenium: NO
 
 test-4:
@@ -38,6 +44,7 @@ test-4:
 	v5.8.8.1: NON PASSA
 			  line 30: 'more options' scomparso, 're-name' spostato fuori da 'more options'
 	repaired: YES
+			  Capisce la nuova struttura della pagina e corregge al primo tentativo.
 	healenium: NO
 
 test-5:
@@ -45,6 +52,7 @@ test-5:
 	v5.8.8.1: NON PASSA
 			  line 30: 'more options' scomparso, 'delete' spostato fuori da 'more options'
 	repaired: YES
+			  Capisce la nuova struttura della pagina e corregge al primo tentativo.
 	healenium: NO
 
 test-6:
@@ -52,6 +60,7 @@ test-6:
 	v5.8.8.1: NON PASSA
 			  line 28: text 'Edit Multiple Tasks' cambiato in 'Select'
 	repaired: YES
+			  Text corretto al primo tentativo.
 	healenium: NO
 
 test-7:
@@ -60,7 +69,8 @@ test-7:
 			  line 24: tasto sidebar: indice cambiato da [0] a [1]
 			  line 28: settings: resource-id cambiato da 'cn.ticktick.task:id/settings_btn' a 'cn.ticktick.task:id/amc'
 			  line 32: resource-id cambiato da 'cn.ticktick.task:id/level_icon' a 'cn.ticktick.task:id/aa1', inoltre cliccare l'icona livello porta direttamente alla pagina 'My Achievement Score'
-	repaired: NO (2 tries, non riesce a risolvere problema sidebar + navigazione sbagliata)
+	repaired: NO
+			  Nei due tentativi usati, non riesce a risolvere il problema della sidebar, e non riesce a capire la nuova navigazione.
 	healenium: NO
 
 test-8:
@@ -69,7 +79,8 @@ test-8:
 			  line 24: tasto sidebar: indice cambiato da [0] a [1]
 			  line 28: settings: resource-id cambiato da 'cn.ticktick.task:id/settings_btn' a 'cn.ticktick.task:id/amc'
 			  line 32: text "Follow WeChat Official Account" cambiato in "Add Tasks in Wechat"
-	repaired: YES (ha deciso di dare 2 versioni: la prima fallisce per il solito problema all'indice della sidebar, la seconda è più robusta e future-proof, e funziona)
+	repaired: YES
+			  Decide di fornire due soluzioni al primo tentativo. La prima soluzione mantiene il problema della sidebar, la seconda è più solida e funziona.
 	healenium: NO
 	
 
