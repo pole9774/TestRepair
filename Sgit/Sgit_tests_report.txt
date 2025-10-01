@@ -13,8 +13,10 @@ test-2-new:
 	v1.3.0: PASSA
 	v1.3.2: NON PASSA
           line 28: nella nuova versione gli attributi di Git Profile gestiti in 'More options' -> 'Settings'
-  repaired: 1st try: NO (sbagliato id back button)
-            2nd try: YES (risolto problema id back button)
+  repaired: 1st try: NO
+            2nd try: YES
+            Al primo tentativo risolve i problemi, ma sbaglia content-desc per il back button.
+            Al secondo tentativo si passa il log errore dell'esecuzione del test e risolve il problema del back button.
   healenium: NO 
 
 

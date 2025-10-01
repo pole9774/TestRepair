@@ -28,8 +28,10 @@ test-5-new:
   v1.14.0: PASSA
   v1.23.1: NON PASSA
            line 81: 'About': indice cambiato da [7] a [9]
-  repaired: 1st try: NO (problema indici in Settings screen)
-            2nd try: YES (problema indici risolto con locators più specifici)
+  repaired: 1st try: NO
+            2nd try: YES
+            Al primo tentativo usa class name 'android.widget.LinearLayout' con indici per trovare gli elementi di 'settings', ma ha problemi con gli indici.
+            Al secondo tentativo gli si fa notare che il test non si comporta come dovrebbe, e risolve il problema usando come locator per gli elementi di 'settings' xpath "//android.widget.TextView[@resource-id='android:id/title' and @text='...']".
   healenium: NO 
 
 test-6-new:

@@ -51,7 +51,11 @@ test-7:
 	v0.15.13: NON PASSA
 			  line 32: nuovo step nella nuova versione: clicca 'event' prima di cercare l'elemento
 			  line 40: cancel button: non presente nella nuova versione
-	repaired: 4th try: YES (problemi con tabs time/event e con cancel button sparito. Risolti al quarto tentativo)
+	repaired: 4th try: YES
+			  Al primo tentativo ha problemi con tab 'event'.
+			  Al secondo tentativo risolve ma ha problemi con back button.
+			  Al terzo tentativo risolve problemi back button ma ha nuovi problemi con 'event'.
+			  Al quarto tentativo risolve tutti i problemi.
 	healenium: NO 
 
 test-8:
@@ -59,7 +63,9 @@ test-8:
 	v0.15.13: NON PASSA
 			  line 32: nuovo step nella nuova versione: clicca 'event' prima di cercare l'elemento
 			  line 40: schedule button: text "Schedule" non presente nella nuova versione
-	repaired: 2nd try: YES (problemi con tabs time/event, risolti al secondo tentativo)
+	repaired: 2nd try: YES
+			  Al primo tentativo ha problemi con tab 'event'.
+			  Al secondo riolve il problema.
 	healenium: NO 
 
 test-9-new:
@@ -83,14 +89,18 @@ test-12-new:
 	v0.15.13: NON PASSA
 			  line 32: next button: resource-id cambiato da 'com.forrestguice.suntimeswidget:id/info_time_nextbtn' a 'com.forrestguice.suntimeswidget:id/info_time_nextbtn1'
 			  line 36: previous button: resource-id cambiato da 'com.forrestguice.suntimeswidget:id/info_time_prevbtn' a 'com.forrestguice.suntimeswidget:id/info_time_prevbtn1'
-	repaired: 2nd try: NO (al primo tentativo problema back. Fatto notare ma non è stato risolto al secondo tentativo)
+	repaired: 2nd try: NO
+			  Al primo tentativo risolve i problemi, ma ha problemi a tornare indietro.
+			  Al secondo tentativo si fa notare il problema ma non riesce a risolverlo.
 	healenium: YES 
 
 test-13-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA
 			  funzionalità con tanti cambiamenti: map type ha più opzioni che portano a indici sbagliati, Sunlight ecc. spostati in map_menu -> options con più opzioni
-	repaired: 2nd try: NO (al primo tentativo non capisce che dopo aver selezionato una checkbox esce dalle opzioni. Al secondo tentativo non lo capisce, nonostante gli sia fornito uno screenshot successivo alla selezione)
+	repaired: 2nd try: NO
+			  Ha problemi con il nuovo posizionamento di checkbox Sunlight, ecc.
+			  Si fanno notare ma non riesce a risolverli, non riesce a capire che dopo aver checkato un opzione il menu si chiude, nonostante lo screenshot fornito.
 	healenium: NO 
 
 
