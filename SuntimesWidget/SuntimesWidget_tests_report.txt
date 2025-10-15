@@ -97,7 +97,10 @@ test-12-new:
 test-13-new:
 	v0.11.0: PASSA
 	v0.15.13: NON PASSA
-			  funzionalità con tanti cambiamenti: map type ha più opzioni che portano a indici sbagliati, Sunlight ecc. spostati in map_menu -> options con più opzioni
+			  line 32: resource-id Map Type cambiato da 'com.forrestguice.suntimeswidget:id/worldmap_selector' a 'com.forrestguice.suntimeswidget:id/map_modemenu'
+			  ci sono nuove opzioni per Map Type, che portano a indici sbagliati
+			  nuovo map_menu con nuove opzioni
+			  Sunlight ecc. spostati in map_menu -> options con più opzioni
 	repaired: 2nd try: NO
 			  Ha problemi con il nuovo posizionamento di checkbox Sunlight, ecc.
 			  Si fanno notare ma non riesce a risolverli, non riesce a capire che dopo aver checkato un opzione il menu si chiude, nonostante lo screenshot fornito.
